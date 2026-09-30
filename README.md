@@ -1,6 +1,6 @@
 # Logic Lab
 
-Laboratório pessoal em português com 900 exercícios de lacunas: 30 por nível (fácil, médio e difícil) em 10 estruturas: if, if/else, else if, switch, ternário, for, while, do/while, for/of e for/in.
+Laboratório pessoal em português com 1.170 exercícios de lacunas: 30 por nível (fácil, médio e difícil) em 13 assuntos: if, if/else, else if, switch, ternário, for, while, do/while, for/of, for/in, return, try/catch e async/await.
 
 ## Usar
 
@@ -11,6 +11,8 @@ A aba Aprendizado distingue exercícios únicos concluídos, tentativas e revis�
 ## Correção e conteúdo
 
 A correção compara tokens com gabaritos, aceitando espaços e aspas simples/duplas. Não executa código enviado ao servidor e não reconhece automaticamente todas as expressões semanticamente equivalentes. Há 90 regras de decisão e 90 algoritmos de repetição, revisitados nas diferentes estruturas para permitir comparação; os 30 desafios dentro de cada combinação de estrutura e nível têm objetivos distintos.
+
+Os 270 exercícios de return, try/catch e async/await têm títulos e programas distintos, com 30 de cada dificuldade por assunto. Operações externas assíncronas são simuladas, sem rede ou credenciais. Seus oráculos são valores declarados separadamente dos gabaritos no arquivo autoral.
 
 ## Executar localmente
 
@@ -23,16 +25,16 @@ node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1
 npm run dev -- --host 127.0.0.1 --port 5173
 ```
 
-Aplique a migração apenas uma vez por banco local. Dados locais ficam em `.wrangler/state`; dados publicados usam D1 separado. O catálogo está em `lib/exercises.json`, o gerador em `scripts/generate-exercises.py`, e os contadores são derivados da tabela `attempts`.
+Aplique a migração apenas uma vez por banco local. Dados locais ficam em `.wrangler/state`; dados publicados usam D1 separado. O catálogo original está em `lib/exercises.json` e as novas categorias em `lib/additional-exercises.json`, com autoria em `scripts/new-topics.mjs`, e os contadores são derivados da tabela `attempts`.
 
 ## Validar catálogo
 
 ```sh
-python3 scripts/generate-exercises.py
+node scripts/new-topics.mjs
 node scripts/validate-exercises.mjs
 npx tsc --noEmit
 ```
 
-O validador confere quantidade, grupos, IDs e lacunas e executa os 900 gabaritos com limite de tempo. Ele também atualiza a saída esperada de cada exercício. Sempre rode-o depois do gerador.
+O validador é somente leitura: confere 1.170 exercícios e 39 grupos de 30, IDs, lacunas e unicidade dos novos títulos/códigos; executa gabaritos e alternativas com limite de tempo, aguarda Promises e compara as saídas aos oráculos. Também verifica rejeição de lacunas incorretas ou ausentes. Os 900 antigos passam por regressão contra as saídas preexistentes; isso não equivale a uma nova auditoria pedagógica completa. O teste nunca recalcula o esperado a partir da solução. O gerador legado Python não deve ser executado sobre o catálogo publicado sem uma revisão das saídas e IDs.
 
 WebMCP: `open_exercise` permite abrir um exercício sem submeter respostas; só é registrado em navegadores com suporte.
