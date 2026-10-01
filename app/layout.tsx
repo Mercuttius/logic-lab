@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Logic Lab · Exercícios de Node.js",
-  description: "Pratique lógica de programação com 1.170 exercícios de lacunas e acompanhe seu aprendizado.",
+  description: "Pratique lógica de programação com 1.350 exercícios de lacunas e acompanhe seu aprendizado.",
   other: {
     "codex-preview": "development",
   },

@@ -4,14 +4,16 @@ import assert from 'node:assert/strict';
 import ts from 'typescript';
 const base=JSON.parse(fs.readFileSync(new URL('../lib/exercises.json',import.meta.url),'utf8'));
 const extra=JSON.parse(fs.readFileSync(new URL('../lib/additional-exercises.json',import.meta.url),'utf8'));
-const exercises=[...base,...extra];
+const collections=JSON.parse(fs.readFileSync(new URL('../lib/collections-exercises.json',import.meta.url),'utf8'));
+const authored=[...extra,...collections];
+const exercises=[...base,...authored];
 const compiled=ts.transpileModule(fs.readFileSync(new URL('../lib/catalog.ts',import.meta.url),'utf8'),{compilerOptions:{esModuleInterop:true,module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
-const api={exports:{},require:name=>{if(name==='./exercises.json')return base;if(name==='./additional-exercises.json')return extra;throw Error(name);}};
+const api={exports:{},require:name=>{if(name==='./exercises.json')return base;if(name==='./additional-exercises.json')return extra;if(name==='./collections-exercises.json')return collections;throw Error(name);}};
 vm.runInNewContext(compiled,api);
-assert.equal(base.length,900);assert.equal(extra.length,270);assert.equal(exercises.length,1170);
-assert.equal(new Set(exercises.map(e=>e.id)).size,1170);
-assert.equal(new Set(extra.map(e=>e.title)).size,270);
-assert.equal(new Set(extra.map(e=>e.code)).size,270);
+assert.equal(base.length,900);assert.equal(extra.length,270);assert.equal(collections.length,180);assert.equal(exercises.length,1350);
+assert.equal(new Set(exercises.map(e=>e.id)).size,1350);
+assert.equal(new Set(authored.map(e=>e.title)).size,450);
+assert.equal(new Set(authored.map(e=>e.code)).size,450);
 const counts=new Map();let executions=0,negativeChecks=0;
 async function execute(e,answers){
  const source=e.code.replace(/___(\d+)___/g,(_,i)=>answers[Number(i)]);
@@ -32,7 +34,7 @@ for(const e of exercises){
  const canonical=e.answers.map(a=>a[0]);
  assert(api.exports.grade(e,canonical),e.id+' gabarito rejeitado');
  await execute(e,canonical);
- if(extra.includes(e)){
+ if(authored.includes(e)){
   for(let i=0;i<e.answers.length;i++){
    for(const variant of e.answers[i].slice(1)){
     const values=[...canonical];values[i]=variant;
@@ -44,7 +46,7 @@ for(const e of exercises){
   assert.equal(api.exports.grade(e,[]),false,e.id+' aceitou lacunas vazias');
  }
 }
-assert.equal(counts.size,39);for(const [name,count] of counts)assert.equal(count,30,name);
-assert.equal(api.exports.totalWeight,2340);
-console.log(`PASS: 1.170 exercícios; 39 grupos de 30; 270 novos títulos/códigos únicos; ${executions} execuções e ${negativeChecks} verificações negativas.`);
-console.log('Os 270 novos oráculos são declarados no conteúdo autoral. Os 900 antigos foram apenas verificados por regressão contra as saídas já existentes. Nenhum gabarito ou saída é reescrito pelo teste.');
+assert.equal(counts.size,45);for(const [name,count] of counts)assert.equal(count,30,name);
+assert.equal(api.exports.totalWeight,2700);
+console.log(`PASS: 1.350 exercícios; 45 grupos de 30; 450 autorais com títulos/códigos únicos; ${executions} execuções e ${negativeChecks} verificações negativas.`);
+console.log('Os 450 oráculos autorais são declarados no conteúdo autoral. Os 900 antigos foram apenas verificados por regressão contra as saídas já existentes. Nenhum gabarito ou saída é reescrito pelo teste.');

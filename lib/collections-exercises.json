@@ -1,0 +1,3074 @@
+[
+  {
+    "id": "arrays-easy-01",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 1,
+    "title": "Primeira estação da rota",
+    "description": "Leia o primeiro elemento usando seu índice. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const estacoes=[\"Sé\",\"Luz\",\"Brás\"];\nconst inicio=estacoes[___0___];\nconsole.log(JSON.stringify(inicio));",
+    "answers": [
+      [
+        "0"
+      ]
+    ],
+    "expected": "\"Sé\"",
+    "hint": "Os índices começam em zero.",
+    "explanation": "Os índices começam em zero."
+  },
+  {
+    "id": "arrays-easy-02",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 2,
+    "title": "Total de tarefas na lista",
+    "description": "Leia a propriedade que informa o comprimento do array. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const tarefas=[\"ler\",\"praticar\",\"revisar\"];\nconst total=tarefas.___0___;\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "length"
+      ]
+    ],
+    "expected": "3",
+    "hint": "length é uma propriedade, não uma função.",
+    "explanation": "length é uma propriedade, não uma função."
+  },
+  {
+    "id": "arrays-easy-03",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 3,
+    "title": "Última senha da fila",
+    "description": "Use at com índice negativo para obter o último item. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const senhas=[10,20,30];\nconst ultima=senhas.at(___0___);\nconsole.log(JSON.stringify(ultima));",
+    "answers": [
+      [
+        "-1"
+      ]
+    ],
+    "expected": "30",
+    "hint": "at(-1) acessa o último elemento.",
+    "explanation": "at(-1) acessa o último elemento."
+  },
+  {
+    "id": "arrays-easy-04",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 4,
+    "title": "Adicionar compra ao final",
+    "description": "Complete o nome do método que acrescenta um elemento no final. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const compras=[\"pão\"];\ncompras.___0___(\"leite\");\nconsole.log(JSON.stringify(compras));",
+    "answers": [
+      [
+        "push"
+      ]
+    ],
+    "expected": "[\"pão\",\"leite\"]",
+    "hint": "push altera o array original.",
+    "explanation": "push altera o array original."
+  },
+  {
+    "id": "arrays-easy-05",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 5,
+    "title": "Retirar prato do topo",
+    "description": "Remova e guarde o último elemento com pop. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pratos=[\"azul\",\"verde\",\"branco\"];\nconst retirado=pratos.___0___();\nconsole.log(JSON.stringify([retirado,pratos]));",
+    "answers": [
+      [
+        "pop"
+      ]
+    ],
+    "expected": "[\"branco\",[\"azul\",\"verde\"]]",
+    "hint": "pop devolve o elemento retirado.",
+    "explanation": "pop devolve o elemento retirado."
+  },
+  {
+    "id": "arrays-easy-06",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 6,
+    "title": "Atender primeiro cliente",
+    "description": "Use shift para retirar quem está no início. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const fila=[\"Ana\",\"Bia\",\"Caio\"];\nconst atendido=fila.___0___();\nconsole.log(JSON.stringify([atendido,fila]));",
+    "answers": [
+      [
+        "shift"
+      ]
+    ],
+    "expected": "[\"Ana\",[\"Bia\",\"Caio\"]]",
+    "hint": "shift remove o elemento de índice zero.",
+    "explanation": "shift remove o elemento de índice zero."
+  },
+  {
+    "id": "arrays-easy-07",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 7,
+    "title": "Inserir prioridade na frente",
+    "description": "Acrescente urgente no início usando unshift. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const fila=[\"normal\"];\nfila.___0___(\"urgente\");\nconsole.log(JSON.stringify(fila));",
+    "answers": [
+      [
+        "unshift"
+      ]
+    ],
+    "expected": "[\"urgente\",\"normal\"]",
+    "hint": "unshift desloca os elementos existentes.",
+    "explanation": "unshift desloca os elementos existentes."
+  },
+  {
+    "id": "arrays-easy-08",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 8,
+    "title": "Corrigir item pelo índice",
+    "description": "Troque o segundo elemento por CSS. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const aulas=[\"HTML\",\"CS\",\"JS\"];\naulas[___0___]=\"CSS\";\nconsole.log(JSON.stringify(aulas));",
+    "answers": [
+      [
+        "1"
+      ]
+    ],
+    "expected": "[\"HTML\",\"CSS\",\"JS\"]",
+    "hint": "O segundo elemento usa o índice 1.",
+    "explanation": "O segundo elemento usa o índice 1."
+  },
+  {
+    "id": "arrays-easy-09",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 9,
+    "title": "Verificar ingrediente disponível",
+    "description": "Use includes para verificar a presença de sal. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const ingredientes=[\"água\",\"sal\"];\nconst tem=ingredientes.___0___(\"sal\");\nconsole.log(JSON.stringify(tem));",
+    "answers": [
+      [
+        "includes"
+      ]
+    ],
+    "expected": "true",
+    "hint": "includes devolve um booleano.",
+    "explanation": "includes devolve um booleano."
+  },
+  {
+    "id": "arrays-easy-10",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 10,
+    "title": "Encontrar posição do capítulo",
+    "description": "Localize o índice de funções usando indexOf. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const capitulos=[\"tipos\",\"laços\",\"funções\"];\nconst posicao=capitulos.___0___(\"funções\");\nconsole.log(JSON.stringify(posicao));",
+    "answers": [
+      [
+        "indexOf"
+      ]
+    ],
+    "expected": "2",
+    "hint": "indexOf devolve -1 se não encontrar.",
+    "explanation": "indexOf devolve -1 se não encontrar."
+  },
+  {
+    "id": "arrays-easy-11",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 11,
+    "title": "Juntar palavras com hífen",
+    "description": "Use join com o separador indicado. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const palavras=[\"meu\",\"primeiro\",\"app\"];\nconst nome=palavras.join(___0___);\nconsole.log(JSON.stringify(nome));",
+    "answers": [
+      [
+        "\"-\""
+      ]
+    ],
+    "expected": "\"meu-primeiro-app\"",
+    "hint": "O separador aparece somente entre os itens.",
+    "explanation": "O separador aparece somente entre os itens."
+  },
+  {
+    "id": "arrays-easy-12",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 12,
+    "title": "Recortar trecho sem remover",
+    "description": "Use slice para copiar os elementos de índice 1 e 2. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const letras=[\"a\",\"b\",\"c\",\"d\"];\nconst trecho=letras.slice(1,___0___);\nconsole.log(JSON.stringify([trecho,letras]));",
+    "answers": [
+      [
+        "3"
+      ]
+    ],
+    "expected": "[[\"b\",\"c\"],[\"a\",\"b\",\"c\",\"d\"]]",
+    "hint": "O fim de slice é exclusivo e o original permanece intacto.",
+    "explanation": "O fim de slice é exclusivo e o original permanece intacto."
+  },
+  {
+    "id": "arrays-easy-13",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 13,
+    "title": "Unir duas turmas",
+    "description": "Complete o método concat para criar um array combinado. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const manha=[\"Ana\",\"Bia\"];\nconst tarde=[\"Caio\"];\nconst todos=manha.___0___(tarde);\nconsole.log(JSON.stringify([todos,manha]));",
+    "answers": [
+      [
+        "concat"
+      ]
+    ],
+    "expected": "[[\"Ana\",\"Bia\",\"Caio\"],[\"Ana\",\"Bia\"]]",
+    "hint": "concat cria outro array.",
+    "explanation": "concat cria outro array."
+  },
+  {
+    "id": "arrays-easy-14",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 14,
+    "title": "Inverter ordem dos cartões",
+    "description": "Inverta o próprio array com reverse. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const cartas=[1,2,3];\ncartas.___0___();\nconsole.log(JSON.stringify(cartas));",
+    "answers": [
+      [
+        "reverse"
+      ]
+    ],
+    "expected": "[3,2,1]",
+    "hint": "reverse modifica o array em que é chamado.",
+    "explanation": "reverse modifica o array em que é chamado."
+  },
+  {
+    "id": "arrays-easy-15",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 15,
+    "title": "Reconhecer uma lista",
+    "description": "Complete a verificação que distingue array de objeto comum. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const resultado=[Array.___0___([]),Array.isArray({})];\nconsole.log(JSON.stringify(resultado));",
+    "answers": [
+      [
+        "isArray"
+      ]
+    ],
+    "expected": "[true,false]",
+    "hint": "Array.isArray verifica arrays mesmo sendo objetos em JavaScript.",
+    "explanation": "Array.isArray verifica arrays mesmo sendo objetos em JavaScript."
+  },
+  {
+    "id": "arrays-easy-16",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 16,
+    "title": "Separar lista de cores",
+    "description": "Transforme a string em array separando por vírgula. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const texto=\"azul,verde,roxo\";\nconst cores=texto.split(___0___);\nconsole.log(JSON.stringify(cores));",
+    "answers": [
+      [
+        "\",\""
+      ]
+    ],
+    "expected": "[\"azul\",\"verde\",\"roxo\"]",
+    "hint": "split pertence à string e produz um array.",
+    "explanation": "split pertence à string e produz um array."
+  },
+  {
+    "id": "arrays-easy-17",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 17,
+    "title": "Copiar números com spread",
+    "description": "Crie uma cópia rasa usando spread dentro dos colchetes. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const original=[2,4];\nconst copia=[___0___];\ncopia.push(6);\nconsole.log(JSON.stringify([original,copia]));",
+    "answers": [
+      [
+        "...original"
+      ]
+    ],
+    "expected": "[[2,4],[2,4,6]]",
+    "hint": "Os dois arrays são distintos, embora spread seja uma cópia rasa.",
+    "explanation": "Os dois arrays são distintos, embora spread seja uma cópia rasa."
+  },
+  {
+    "id": "arrays-easy-18",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 18,
+    "title": "Dobrar cada medida",
+    "description": "Complete a expressão do callback de map. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const medidas=[0,2,5];\nconst dobros=medidas.map(n=>___0___);\nconsole.log(JSON.stringify(dobros));",
+    "answers": [
+      [
+        "n * 2",
+        "2 * n"
+      ]
+    ],
+    "expected": "[0,4,10]",
+    "hint": "map produz um resultado para cada elemento.",
+    "explanation": "map produz um resultado para cada elemento."
+  },
+  {
+    "id": "arrays-easy-19",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 19,
+    "title": "Selecionar valores positivos",
+    "description": "Complete a condição de filter para manter apenas números maiores que zero. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const valores=[-2,0,3,7];\nconst positivos=valores.filter(n=>___0___);\nconsole.log(JSON.stringify(positivos));",
+    "answers": [
+      [
+        "n > 0",
+        "0 < n"
+      ]
+    ],
+    "expected": "[3,7]",
+    "hint": "filter mantém o elemento quando a condição é verdadeira.",
+    "explanation": "filter mantém o elemento quando a condição é verdadeira."
+  },
+  {
+    "id": "arrays-easy-20",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 20,
+    "title": "Detectar estoque zerado",
+    "description": "Use some para saber se pelo menos um estoque é zero. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const estoques=[4,0,8];\nconst falta=estoques.___0___(n=>n===0);\nconsole.log(JSON.stringify(falta));",
+    "answers": [
+      [
+        "some"
+      ]
+    ],
+    "expected": "true",
+    "hint": "some precisa de apenas um elemento que satisfaça o teste.",
+    "explanation": "some precisa de apenas um elemento que satisfaça o teste."
+  },
+  {
+    "id": "arrays-easy-21",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 21,
+    "title": "Conferir todas as aprovações",
+    "description": "Use every para exigir que todas as notas sejam pelo menos 6. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const notas=[6,8,7];\nconst aprovados=notas.___0___(n=>n>=6);\nconsole.log(JSON.stringify(aprovados));",
+    "answers": [
+      [
+        "every"
+      ]
+    ],
+    "expected": "true",
+    "hint": "every verifica todos os elementos.",
+    "explanation": "every verifica todos os elementos."
+  },
+  {
+    "id": "arrays-easy-22",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 22,
+    "title": "Primeiro número acima do limite",
+    "description": "Use find para devolver o primeiro valor maior que 10. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const valores=[4,12,20];\nconst primeiro=valores.___0___(n=>n>10);\nconsole.log(JSON.stringify(primeiro));",
+    "answers": [
+      [
+        "find"
+      ]
+    ],
+    "expected": "12",
+    "hint": "find devolve o elemento, não seu índice.",
+    "explanation": "find devolve o elemento, não seu índice."
+  },
+  {
+    "id": "arrays-easy-23",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 23,
+    "title": "Índice do primeiro negativo",
+    "description": "Use findIndex para localizar a posição do primeiro valor negativo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const valores=[3,0,-2,-4];\nconst indice=valores.___0___(n=>n<0);\nconsole.log(JSON.stringify(indice));",
+    "answers": [
+      [
+        "findIndex"
+      ]
+    ],
+    "expected": "2",
+    "hint": "findIndex devolve a posição que passou no predicado.",
+    "explanation": "findIndex devolve a posição que passou no predicado."
+  },
+  {
+    "id": "arrays-easy-24",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 24,
+    "title": "Somar uma cesta de preços",
+    "description": "Complete o acumulador de reduce; a soma começa em zero. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const precos=[5,8,2];\nconst total=precos.reduce((s,n)=>___0___,0);\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "s + n",
+        "n + s"
+      ]
+    ],
+    "expected": "15",
+    "hint": "O retorno do callback vira o próximo acumulador.",
+    "explanation": "O retorno do callback vira o próximo acumulador."
+  },
+  {
+    "id": "arrays-easy-25",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 25,
+    "title": "Preencher assentos livres",
+    "description": "Use fill para preencher os três espaços com livre. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const assentos=Array(3).___0___(\"livre\");\nconsole.log(JSON.stringify(assentos));",
+    "answers": [
+      [
+        "fill"
+      ]
+    ],
+    "expected": "[\"livre\",\"livre\",\"livre\"]",
+    "hint": "fill escreve o mesmo valor em todas as posições.",
+    "explanation": "fill escreve o mesmo valor em todas as posições."
+  },
+  {
+    "id": "arrays-easy-26",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 26,
+    "title": "Remover uma posição com splice",
+    "description": "Complete a quantidade a remover, mantendo os demais itens. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const frutas=[\"maçã\",\"pera\",\"uva\"];\nconst removidos=frutas.splice(1,___0___);\nconsole.log(JSON.stringify([frutas,removidos]));",
+    "answers": [
+      [
+        "1"
+      ]
+    ],
+    "expected": "[[\"maçã\",\"uva\"],[\"pera\"]]",
+    "hint": "O segundo argumento de splice é uma contagem.",
+    "explanation": "O segundo argumento de splice é uma contagem."
+  },
+  {
+    "id": "arrays-easy-27",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 27,
+    "title": "Duas variáveis por desestruturação",
+    "description": "Desestruture o primeiro e o segundo valores do array. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const ___0___=[8,3];\nconsole.log(JSON.stringify([x,y]));",
+    "answers": [
+      [
+        "[x,y]"
+      ]
+    ],
+    "expected": "[8,3]",
+    "hint": "Colchetes à esquerda extraem posições.",
+    "explanation": "Colchetes à esquerda extraem posições."
+  },
+  {
+    "id": "arrays-easy-28",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 28,
+    "title": "Array realmente vazio",
+    "description": "Teste o comprimento, pois até um array vazio é truthy. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[];\nconst vazio=___0___;\nconsole.log(JSON.stringify(vazio));",
+    "answers": [
+      [
+        "itens.length === 0",
+        "itens.length == 0"
+      ]
+    ],
+    "expected": "true",
+    "hint": "Uma lista vazia tem comprimento zero.",
+    "explanation": "Uma lista vazia tem comprimento zero."
+  },
+  {
+    "id": "arrays-easy-29",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 29,
+    "title": "Ordenar números corretamente",
+    "description": "Complete o comparador numérico crescente de sort. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const numeros=[10,2,1];\nnumeros.sort((a,b)=>___0___);\nconsole.log(JSON.stringify(numeros));",
+    "answers": [
+      [
+        "a - b"
+      ]
+    ],
+    "expected": "[1,2,10]",
+    "hint": "O comparador evita a ordenação padrão como strings.",
+    "explanation": "O comparador evita a ordenação padrão como strings."
+  },
+  {
+    "id": "arrays-easy-30",
+    "topic": "arrays",
+    "level": "easy",
+    "number": 30,
+    "title": "Abrir uma camada de listas",
+    "description": "Use flat sem argumentos para achatar uma camada. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const grupos=[[1,2],[3],[]];\nconst numeros=grupos.___0___();\nconsole.log(JSON.stringify(numeros));",
+    "answers": [
+      [
+        "flat"
+      ]
+    ],
+    "expected": "[1,2,3]",
+    "hint": "flat() usa profundidade 1 por padrão.",
+    "explanation": "flat() usa profundidade 1 por padrão."
+  },
+  {
+    "id": "arrays-medium-01",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 1,
+    "title": "Limpar nomes de uma importação",
+    "description": "Aplique trim e depois descarte strings vazias pelo comprimento. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const nomes=[\" Ana \",\"  \",\"Bia\"];\nconst limpos=nomes.map(n=>n.trim()).filter(n=>___0___);\nconsole.log(JSON.stringify(limpos));",
+    "answers": [
+      [
+        "n.length > 0",
+        "n !== \"\""
+      ]
+    ],
+    "expected": "[\"Ana\",\"Bia\"]",
+    "hint": "Limpe antes de testar se ainda existe texto.",
+    "explanation": "Limpe antes de testar se ainda existe texto."
+  },
+  {
+    "id": "arrays-medium-02",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 2,
+    "title": "Extrair etiquetas de produtos",
+    "description": "Use flatMap para reunir os arrays de etiquetas. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const produtos=[{tags:[\"novo\",\"azul\"]},{tags:[]},{tags:[\"leve\"]}];\nconst tags=produtos.___0___(p=>p.tags);\nconsole.log(JSON.stringify(tags));",
+    "answers": [
+      [
+        "flatMap"
+      ]
+    ],
+    "expected": "[\"novo\",\"azul\",\"leve\"]",
+    "hint": "flatMap combina mapeamento e achatamento de uma camada.",
+    "explanation": "flatMap combina mapeamento e achatamento de uma camada."
+  },
+  {
+    "id": "arrays-medium-03",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 3,
+    "title": "Remover duplicatas primitivas",
+    "description": "Crie um Set e espalhe os valores em outro array. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const codigos=[3,1,3,2,1];\nconst unicos=[...___0___];\nconsole.log(JSON.stringify(unicos));",
+    "answers": [
+      [
+        "new Set(codigos)"
+      ]
+    ],
+    "expected": "[3,1,2]",
+    "hint": "Set preserva a ordem da primeira ocorrência.",
+    "explanation": "Set preserva a ordem da primeira ocorrência."
+  },
+  {
+    "id": "arrays-medium-04",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 4,
+    "title": "Interseção de interesses",
+    "description": "Mantenha os elementos da primeira lista também presentes na segunda. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const a=[\"JS\",\"SQL\",\"CSS\"],b=[\"SQL\",\"Go\"];\nconst comuns=a.filter(x=>___0___);\nconsole.log(JSON.stringify(comuns));",
+    "answers": [
+      [
+        "b.includes(x)"
+      ]
+    ],
+    "expected": "[\"SQL\"]",
+    "hint": "includes testa pertinência na segunda lista.",
+    "explanation": "includes testa pertinência na segunda lista."
+  },
+  {
+    "id": "arrays-medium-05",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 5,
+    "title": "Diferença entre inscrições",
+    "description": "Mantenha quem ainda não confirmou usando a negação de includes. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const inscritos=[1,2,3],confirmados=[2];\nconst pendentes=inscritos.filter(id=>___0___);\nconsole.log(JSON.stringify(pendentes));",
+    "answers": [
+      [
+        "!confirmados.includes(id)"
+      ]
+    ],
+    "expected": "[1,3]",
+    "hint": "Negar a presença encontra os ausentes.",
+    "explanation": "Negar a presença encontra os ausentes."
+  },
+  {
+    "id": "arrays-medium-06",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 6,
+    "title": "Rodar uma sequência à esquerda",
+    "description": "Combine a fatia após o primeiro item com o primeiro item. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const fila=[\"a\",\"b\",\"c\"];\nconst rodada=[...fila.slice(1),___0___];\nconsole.log(JSON.stringify([rodada,fila]));",
+    "answers": [
+      [
+        "fila[0]",
+        "fila.at(0)"
+      ]
+    ],
+    "expected": "[[\"b\",\"c\",\"a\"],[\"a\",\"b\",\"c\"]]",
+    "hint": "A rotação preserva os itens e não precisa alterar a origem.",
+    "explanation": "A rotação preserva os itens e não precisa alterar a origem."
+  },
+  {
+    "id": "arrays-medium-07",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 7,
+    "title": "Dividir trabalho em lotes",
+    "description": "Complete o limite exclusivo da fatia de cada lote. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[1,2,3,4,5],tamanho=2,lotes=[];\nfor(let i=0;i<itens.length;i+=tamanho){\n  lotes.push(itens.slice(i,___0___));\n}\nconsole.log(JSON.stringify(lotes));",
+    "answers": [
+      [
+        "i + tamanho",
+        "tamanho + i"
+      ]
+    ],
+    "expected": "[[1,2],[3,4],[5]]",
+    "hint": "O último lote pode ser menor que o tamanho pedido.",
+    "explanation": "O último lote pode ser menor que o tamanho pedido."
+  },
+  {
+    "id": "arrays-medium-08",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 8,
+    "title": "Emparelhar colunas paralelas",
+    "description": "Use o índice de map para acessar a outra coluna. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const nomes=[\"Ana\",\"Bia\"],pontos=[8,5];\nconst pares=nomes.map((nome,i)=>[nome,___0___]);\nconsole.log(JSON.stringify(pares));",
+    "answers": [
+      [
+        "pontos[i]"
+      ]
+    ],
+    "expected": "[[\"Ana\",8],[\"Bia\",5]]",
+    "hint": "O segundo parâmetro de map é o índice.",
+    "explanation": "O segundo parâmetro de map é o índice."
+  },
+  {
+    "id": "arrays-medium-09",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 9,
+    "title": "Subtotal de itens aprovados",
+    "description": "Some apenas os valores dos registros ativos. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[{ativo:true,valor:4},{ativo:false,valor:90},{ativo:true,valor:6}];\nconst total=itens.filter(x=>x.ativo).reduce((s,x)=>___0___,0);\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "s + x.valor"
+      ]
+    ],
+    "expected": "10",
+    "hint": "filter seleciona registros; reduce soma seus valores.",
+    "explanation": "filter seleciona registros; reduce soma seus valores."
+  },
+  {
+    "id": "arrays-medium-10",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 10,
+    "title": "Ordenação com desempate",
+    "description": "Ordene por nota decrescente e, em empate, por id crescente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const alunos=[{id:3,nota:8},{id:2,nota:9},{id:1,nota:8}];\nalunos.sort((a,b)=>b.nota-a.nota || ___0___);\nconsole.log(JSON.stringify(alunos.map(a=>a.id)));",
+    "answers": [
+      [
+        "a.id - b.id"
+      ]
+    ],
+    "expected": "[2,1,3]",
+    "hint": "O segundo comparador é usado quando o primeiro produz zero.",
+    "explanation": "O segundo comparador é usado quando o primeiro produz zero."
+  },
+  {
+    "id": "arrays-medium-11",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 11,
+    "title": "Atualizar um item sem mutação",
+    "description": "No map, copie o objeto escolhido alterando somente a quantidade. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[{id:1,qtd:2},{id:2,qtd:4}];\nconst novos=itens.map(x=>x.id===2?___0___:x);\nconsole.log(JSON.stringify([novos,itens[1].qtd]));",
+    "answers": [
+      [
+        "{...x,qtd:5}"
+      ]
+    ],
+    "expected": "[[{\"id\":1,\"qtd\":2},{\"id\":2,\"qtd\":5}],4]",
+    "hint": "Spread seguido da propriedade substitui apenas esse campo.",
+    "explanation": "Spread seguido da propriedade substitui apenas esse campo."
+  },
+  {
+    "id": "arrays-medium-12",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 12,
+    "title": "Separar pares e ímpares",
+    "description": "Escolha qual dos dois grupos receberá o número. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const grupos=[[],[]];\nfor(const n of [1,2,3,4]){\n  grupos[___0___].push(n);\n}\nconsole.log(JSON.stringify(grupos));",
+    "answers": [
+      [
+        "n % 2"
+      ]
+    ],
+    "expected": "[[2,4],[1,3]]",
+    "hint": "Para estes inteiros positivos, o resto é 0 ou 1.",
+    "explanation": "Para estes inteiros positivos, o resto é 0 ou 1."
+  },
+  {
+    "id": "arrays-medium-13",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 13,
+    "title": "Soma acumulada por posição",
+    "description": "Acrescente cada número à soma do prefixo anterior. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "let soma=0;\nconst prefixos=[3,-1,4].map(n=>___0___);\nconsole.log(JSON.stringify(prefixos));",
+    "answers": [
+      [
+        "soma += n"
+      ]
+    ],
+    "expected": "[3,2,6]",
+    "hint": "A atribuição composta também produz o novo valor de soma.",
+    "explanation": "A atribuição composta também produz o novo valor de soma."
+  },
+  {
+    "id": "arrays-medium-14",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 14,
+    "title": "Transpor uma matriz retangular",
+    "description": "Leia a mesma coluna de cada linha ao construir a transposta. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const matriz=[[1,2,3],[4,5,6]];\nconst transposta=matriz[0].map((_,col)=>matriz.map(linha=>___0___));\nconsole.log(JSON.stringify(transposta));",
+    "answers": [
+      [
+        "linha[col]"
+      ]
+    ],
+    "expected": "[[1,4],[2,5],[3,6]]",
+    "hint": "Cada coluna da origem vira uma linha.",
+    "explanation": "Cada coluna da origem vira uma linha."
+  },
+  {
+    "id": "arrays-medium-15",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 15,
+    "title": "Somar a diagonal principal",
+    "description": "Use o índice da linha como índice da coluna. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const matriz=[[2,0,0],[0,3,0],[0,0,4]];\nconst soma=matriz.reduce((s,linha,i)=>s+___0___,0);\nconsole.log(JSON.stringify(soma));",
+    "answers": [
+      [
+        "linha[i]"
+      ]
+    ],
+    "expected": "9",
+    "hint": "Na diagonal principal, linha e coluna têm o mesmo índice.",
+    "explanation": "Na diagonal principal, linha e coluna têm o mesmo índice."
+  },
+  {
+    "id": "arrays-medium-16",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 16,
+    "title": "Página intermediária de resultados",
+    "description": "Calcule o início de uma página numerada a partir de 1. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const dados=[1,2,3,4,5,6,7],pagina=2,tamanho=3;\nconst inicio=___0___;\nconst visiveis=dados.slice(inicio,inicio+tamanho);\nconsole.log(JSON.stringify(visiveis));",
+    "answers": [
+      [
+        "(pagina - 1) * tamanho"
+      ]
+    ],
+    "expected": "[4,5,6]",
+    "hint": "A primeira página começa no índice zero.",
+    "explanation": "A primeira página começa no índice zero."
+  },
+  {
+    "id": "arrays-medium-17",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 17,
+    "title": "Último índice de uma repetição",
+    "description": "Use lastIndexOf para encontrar a última ocorrência de erro. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const log=[\"erro\",\"ok\",\"erro\",\"ok\"];\nconst indice=log.___0___(\"erro\");\nconsole.log(JSON.stringify(indice));",
+    "answers": [
+      [
+        "lastIndexOf"
+      ]
+    ],
+    "expected": "2",
+    "hint": "lastIndexOf percorre a busca a partir do fim.",
+    "explanation": "lastIndexOf percorre a busca a partir do fim."
+  },
+  {
+    "id": "arrays-medium-18",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 18,
+    "title": "Preservar zero na limpeza",
+    "description": "Remova apenas null e undefined, mantendo outros valores falsy. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const valores=[0,null,false,undefined,\"\",7];\nconst validos=valores.filter(x=>___0___);\nconsole.log(JSON.stringify(validos));",
+    "answers": [
+      [
+        "x != null",
+        "x !== null && x !== undefined"
+      ]
+    ],
+    "expected": "[0,false,\"\",7]",
+    "hint": "O teste != null exclui exatamente null e undefined.",
+    "explanation": "O teste != null exclui exatamente null e undefined."
+  },
+  {
+    "id": "arrays-medium-19",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 19,
+    "title": "Copiar trecho dentro do array",
+    "description": "Use copyWithin para copiar os dois primeiros itens para a posição 2. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const valores=[1,2,3,4,5];\nvalores.___0___(2,0,2);\nconsole.log(JSON.stringify(valores));",
+    "answers": [
+      [
+        "copyWithin"
+      ]
+    ],
+    "expected": "[1,2,1,2,5]",
+    "hint": "copyWithin substitui posições sem aumentar o comprimento.",
+    "explanation": "copyWithin substitui posições sem aumentar o comprimento."
+  },
+  {
+    "id": "arrays-medium-20",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 20,
+    "title": "Sequência com passo constante",
+    "description": "Complete o mapeador de Array.from para obter 5, 8, 11 e 14. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const sequencia=Array.from({length:4},(_,i)=>___0___);\nconsole.log(JSON.stringify(sequencia));",
+    "answers": [
+      [
+        "5 + i * 3",
+        "i * 3 + 5"
+      ]
+    ],
+    "expected": "[5,8,11,14]",
+    "hint": "O índice começa em zero; some o valor inicial ao passo acumulado.",
+    "explanation": "O índice começa em zero; some o valor inicial ao passo acumulado."
+  },
+  {
+    "id": "arrays-medium-21",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 21,
+    "title": "Contar ocorrências com reduce",
+    "description": "Incremente somente quando o item for igual ao procurado. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[\"a\",\"b\",\"a\",\"a\"],alvo=\"a\";\nconst total=itens.reduce((n,x)=>n+(___0___?1:0),0);\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "x === alvo"
+      ]
+    ],
+    "expected": "3",
+    "hint": "A condição decide se a contribuição é 1 ou 0.",
+    "explanation": "A condição decide se a contribuição é 1 ou 0."
+  },
+  {
+    "id": "arrays-medium-22",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 22,
+    "title": "Média de leituras válidas",
+    "description": "Divida a soma pela quantidade, retornando null para array vazio. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function media(xs){\n  if(!xs.length)return null;\n  return xs.reduce((s,n)=>s+n,0)/___0___;\n}\nconsole.log(JSON.stringify([media([2,4,9]),media([])]));",
+    "answers": [
+      [
+        "xs.length"
+      ]
+    ],
+    "expected": "[5,null]",
+    "hint": "A guarda impede divisão por zero.",
+    "explanation": "A guarda impede divisão por zero."
+  },
+  {
+    "id": "arrays-medium-23",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 23,
+    "title": "Retirar item por id",
+    "description": "Use filter para excluir o objeto com id indicado. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[{id:1},{id:2},{id:3}],excluir=2;\nconst restantes=itens.filter(x=>___0___);\nconsole.log(JSON.stringify(restantes));",
+    "answers": [
+      [
+        "x.id !== excluir"
+      ]
+    ],
+    "expected": "[{\"id\":1},{\"id\":3}]",
+    "hint": "Mantenha exatamente os objetos cujo id difere do alvo.",
+    "explanation": "Mantenha exatamente os objetos cujo id difere do alvo."
+  },
+  {
+    "id": "arrays-medium-24",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 24,
+    "title": "Duplas de vizinhos",
+    "description": "Monte pares consecutivos usando o índice seguinte da origem. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const xs=[4,7,9];\nconst pares=xs.slice(0,-1).map((n,i)=>[n,___0___]);\nconsole.log(JSON.stringify(pares));",
+    "answers": [
+      [
+        "xs[i + 1]"
+      ]
+    ],
+    "expected": "[[4,7],[7,9]]",
+    "hint": "O slice evita um par extra após o último elemento.",
+    "explanation": "O slice evita um par extra após o último elemento."
+  },
+  {
+    "id": "arrays-medium-25",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 25,
+    "title": "Índices de todos os resultados",
+    "description": "Devolva [i] para cada acerto e [] para os demais em flatMap. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const notas=[3,8,9,4];\nconst indices=notas.flatMap((n,i)=>n>=7?___0___:[]);\nconsole.log(JSON.stringify(indices));",
+    "answers": [
+      [
+        "[i]"
+      ]
+    ],
+    "expected": "[1,2]",
+    "hint": "Arrays vazios desaparecem no achatamento de flatMap.",
+    "explanation": "Arrays vazios desaparecem no achatamento de flatMap."
+  },
+  {
+    "id": "arrays-medium-26",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 26,
+    "title": "Copiar matriz sem compartilhar linhas",
+    "description": "Copie cada linha usando spread. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const a=[[1,2],[3,4]];\nconst b=a.map(linha=>___0___);\nb[0][0]=9;\nconsole.log(JSON.stringify([a,b]));",
+    "answers": [
+      [
+        "[...linha]",
+        "linha.slice()"
+      ]
+    ],
+    "expected": "[[[1,2],[3,4]],[[9,2],[3,4]]]",
+    "hint": "Copiar só o array externo ainda compartilharia as linhas.",
+    "explanation": "Copiar só o array externo ainda compartilharia as linhas."
+  },
+  {
+    "id": "arrays-medium-27",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 27,
+    "title": "Produto cartesiano de opções",
+    "description": "Combine cada tamanho com todas as cores. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const tamanhos=[\"P\",\"M\"],cores=[\"azul\",\"preto\"];\nconst combinacoes=tamanhos.flatMap(t=>cores.map(c=>___0___));\nconsole.log(JSON.stringify(combinacoes));",
+    "answers": [
+      [
+        "[t,c]"
+      ]
+    ],
+    "expected": "[[\"P\",\"azul\"],[\"P\",\"preto\"],[\"M\",\"azul\"],[\"M\",\"preto\"]]",
+    "hint": "Cada tamanho gera uma lista de pares, depois achatada.",
+    "explanation": "Cada tamanho gera uma lista de pares, depois achatada."
+  },
+  {
+    "id": "arrays-medium-28",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 28,
+    "title": "Interpolar um item sem apagar",
+    "description": "Complete a contagem de exclusão para apenas inserir com splice. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const etapas=[\"início\",\"fim\"];\netapas.splice(1,___0___,\"meio\");\nconsole.log(JSON.stringify(etapas));",
+    "answers": [
+      [
+        "0"
+      ]
+    ],
+    "expected": "[\"início\",\"meio\",\"fim\"]",
+    "hint": "Com contagem zero, splice apenas insere.",
+    "explanation": "Com contagem zero, splice apenas insere."
+  },
+  {
+    "id": "arrays-medium-29",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 29,
+    "title": "Cabeça e restante da lista",
+    "description": "Use rest para coletar todos os itens após o primeiro. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const [primeiro,___0___]=[10,20,30,40];\nconsole.log(JSON.stringify([primeiro,resto]));",
+    "answers": [
+      [
+        "...resto"
+      ]
+    ],
+    "expected": "[10,[20,30,40]]",
+    "hint": "O rest deve ser o último elemento da desestruturação.",
+    "explanation": "O rest deve ser o último elemento da desestruturação."
+  },
+  {
+    "id": "arrays-medium-30",
+    "topic": "arrays",
+    "level": "medium",
+    "number": 30,
+    "title": "Estabilidade em notas empatadas",
+    "description": "Ordene somente pela nota crescente, preservando a ordem dos empates. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[{id:\"a\",nota:2},{id:\"b\",nota:1},{id:\"c\",nota:2}];\nitens.sort((a,b)=>___0___);\nconsole.log(JSON.stringify(itens.map(x=>x.id)));",
+    "answers": [
+      [
+        "a.nota - b.nota"
+      ]
+    ],
+    "expected": "[\"b\",\"a\",\"c\"]",
+    "hint": "sort é estável: comparações iguais a zero preservam a ordem relativa.",
+    "explanation": "sort é estável: comparações iguais a zero preservam a ordem relativa."
+  },
+  {
+    "id": "arrays-hard-01",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 1,
+    "title": "Mesclar duas listas ordenadas",
+    "description": "Na comparação de duas listas crescentes, selecione o item menor da esquerda. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function mesclar(a,b){\n  const r=[];let i=0,j=0;\n  while(i<a.length && j<b.length){\n    if(a[i]<=b[j])r.push(___0___);\n    else r.push(b[j++]);\n  }\n  return r.concat(a.slice(i),b.slice(j));\n}\nconsole.log(JSON.stringify([mesclar([1,4,4],[2,4,6]),mesclar([],[3])]));",
+    "answers": [
+      [
+        "a[i++]"
+      ]
+    ],
+    "expected": "[[1,2,4,4,4,6],[3]]",
+    "hint": "O pós-incremento lê o elemento e avança somente esse cursor.",
+    "explanation": "O pós-incremento lê o elemento e avança somente esse cursor."
+  },
+  {
+    "id": "arrays-hard-02",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 2,
+    "title": "Maior soma de janela fixa",
+    "description": "Ao deslizar a janela, some o novo item e retire o que saiu. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function maior(xs,k){\n  let soma=xs.slice(0,k).reduce((s,n)=>s+n,0),melhor=soma;\n  for(let i=k;i<xs.length;i++){\n    soma+=xs[i]-___0___;\n    melhor=Math.max(melhor,soma);\n  }\n  return melhor;\n}\nconsole.log(JSON.stringify([maior([2,1,5,1,3],3),maior([-4,-2,-3],2)]));",
+    "answers": [
+      [
+        "xs[i-k]"
+      ]
+    ],
+    "expected": "[9,-5]",
+    "hint": "O item removido está k posições atrás do novo item.",
+    "explanation": "O item removido está k posições atrás do novo item."
+  },
+  {
+    "id": "arrays-hard-03",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 3,
+    "title": "Mediana sem alterar a amostra",
+    "description": "Para tamanho par, faça a média dos dois elementos centrais da cópia ordenada. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function mediana(xs){\n  if(!xs.length)return null;\n  const a=[...xs].sort((x,y)=>x-y),m=Math.floor(a.length/2);\n  return a.length%2?a[m]:___0___;\n}\nconst a=[9,1,5,3];\nconsole.log(JSON.stringify([mediana(a),mediana([7,1,3]),mediana([]),a]));",
+    "answers": [
+      [
+        "(a[m-1]+a[m])/2"
+      ]
+    ],
+    "expected": "[4,3,null,[9,1,5,3]]",
+    "hint": "Os centros de um array par estão em m-1 e m.",
+    "explanation": "Os centros de um array par estão em m-1 e m."
+  },
+  {
+    "id": "arrays-hard-04",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 4,
+    "title": "União de intervalos sobrepostos",
+    "description": "Atualize o fim do intervalo acumulado com o maior dos dois finais. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function unir(intervalos){\n  const r=[];\n  for(const [inicio,fim] of [...intervalos].sort((a,b)=>a[0]-b[0])){\n    const ultimo=r.at(-1);\n    if(ultimo && inicio<=ultimo[1])ultimo[1]=___0___;\n    else r.push([inicio,fim]);\n  }\n  return r;\n}\nconsole.log(JSON.stringify([unir([[5,7],[1,3],[2,6],[9,10]]),unir([])]));",
+    "answers": [
+      [
+        "Math.max(ultimo[1],fim)"
+      ]
+    ],
+    "expected": "[[[1,7],[9,10]],[]]",
+    "hint": "Um intervalo contido não pode reduzir o final já acumulado.",
+    "explanation": "Um intervalo contido não pode reduzir o final já acumulado."
+  },
+  {
+    "id": "arrays-hard-05",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 5,
+    "title": "Compactação de repetições consecutivas",
+    "description": "Incremente a contagem do último grupo quando o valor se repete. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function compactar(xs){\n  const grupos=[];\n  for(const x of xs){\n    const ultimo=grupos.at(-1);\n    if(ultimo && ultimo[0]===x)___0___;\n    else grupos.push([x,1]);\n  }\n  return grupos;\n}\nconsole.log(JSON.stringify([compactar([\"a\",\"a\",\"b\",\"a\"]),compactar([])]));",
+    "answers": [
+      [
+        "ultimo[1]++"
+      ]
+    ],
+    "expected": "[[[\"a\",2],[\"b\",1],[\"a\",1]],[]]",
+    "hint": "Somente repetições adjacentes pertencem ao mesmo grupo.",
+    "explanation": "Somente repetições adjacentes pertencem ao mesmo grupo."
+  },
+  {
+    "id": "arrays-hard-06",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 6,
+    "title": "Descompactar pares de frequência",
+    "description": "Crie tantas cópias do valor quanto a contagem indicar. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pares=[[\"x\",2],[\"y\",0],[\"z\",3]];\nconst xs=pares.flatMap(([valor,n])=>___0___);\nconsole.log(JSON.stringify(xs));",
+    "answers": [
+      [
+        "Array(n).fill(valor)"
+      ]
+    ],
+    "expected": "[\"x\",\"x\",\"z\",\"z\",\"z\"]",
+    "hint": "flatMap concatena os blocos, incluindo o bloco vazio.",
+    "explanation": "flatMap concatena os blocos, incluindo o bloco vazio."
+  },
+  {
+    "id": "arrays-hard-07",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 7,
+    "title": "Intercalar listas desiguais",
+    "description": "Acrescente o elemento da segunda lista apenas enquanto seu índice existir. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function intercalar(a,b){\n  const r=[];\n  for(let i=0;i<Math.max(a.length,b.length);i++){\n    if(i<a.length)r.push(a[i]);\n    if(___0___)r.push(b[i]);\n  }\n  return r;\n}\nconsole.log(JSON.stringify([intercalar([1,2,3],[8]),intercalar([],[7,9])]));",
+    "answers": [
+      [
+        "i < b.length"
+      ]
+    ],
+    "expected": "[[1,8,2,3],[7,9]]",
+    "hint": "O limite de cada lista precisa ser verificado separadamente.",
+    "explanation": "O limite de cada lista precisa ser verificado separadamente."
+  },
+  {
+    "id": "arrays-hard-08",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 8,
+    "title": "Achatar profundidade arbitrária",
+    "description": "Use recursão apenas quando o elemento também for um array. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function achatar(xs){\n  return xs.flatMap(x=>Array.isArray(x)?___0___:[x]);\n}\nconsole.log(JSON.stringify([achatar([1,[2,[3]],[]]),achatar([])]));",
+    "answers": [
+      [
+        "achatar(x)"
+      ]
+    ],
+    "expected": "[[1,2,3],[]]",
+    "hint": "Cada subarray é processado pela mesma função.",
+    "explanation": "Cada subarray é processado pela mesma função."
+  },
+  {
+    "id": "arrays-hard-09",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 9,
+    "title": "Soma de faixa com prefixos",
+    "description": "Subtraia os prefixos para somar o intervalo inclusivo de a até b. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const xs=[2,4,-1,3],prefixo=[0];\nfor(const n of xs)prefixo.push(prefixo.at(-1)+n);\nfunction soma(a,b){return ___0___;}\nconsole.log(JSON.stringify([soma(1,3),soma(0,0)]));",
+    "answers": [
+      [
+        "prefixo[b+1]-prefixo[a]"
+      ]
+    ],
+    "expected": "[6,2]",
+    "hint": "O prefixo inicial zero faz o fim inclusivo usar b+1.",
+    "explanation": "O prefixo inicial zero faz o fim inclusivo usar b+1."
+  },
+  {
+    "id": "arrays-hard-10",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 10,
+    "title": "Menor índice com valor suficiente",
+    "description": "Na busca binária, mova o limite inferior depois de um valor menor que o alvo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function limite(xs,alvo){\n  let inicio=0,fim=xs.length;\n  while(inicio<fim){\n    const meio=Math.floor((inicio+fim)/2);\n    if(xs[meio]<alvo)inicio=___0___;\n    else fim=meio;\n  }\n  return inicio;\n}\nconsole.log(JSON.stringify([limite([1,3,3,5],3),limite([1,3],9),limite([],2)]));",
+    "answers": [
+      [
+        "meio+1"
+      ]
+    ],
+    "expected": "[1,2,0]",
+    "hint": "O intervalo de busca usa limite final exclusivo.",
+    "explanation": "O intervalo de busca usa limite final exclusivo."
+  },
+  {
+    "id": "arrays-hard-11",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 11,
+    "title": "Par com soma em lista ordenada",
+    "description": "Se a soma for pequena, avance o cursor da esquerda. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function par(xs,alvo){\n  let i=0,j=xs.length-1;\n  while(i<j){\n    const soma=xs[i]+xs[j];\n    if(soma===alvo)return [xs[i],xs[j]];\n    if(soma<alvo)___0___;else j--;\n  }\n  return null;\n}\nconsole.log(JSON.stringify([par([1,2,4,8],10),par([1,3],9)]));",
+    "answers": [
+      [
+        "i++"
+      ]
+    ],
+    "expected": "[[2,8],null]",
+    "hint": "Como a lista é crescente, avançar à esquerda aumenta a soma.",
+    "explanation": "Como a lista é crescente, avançar à esquerda aumenta a soma."
+  },
+  {
+    "id": "arrays-hard-12",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 12,
+    "title": "Rotação circular por várias posições",
+    "description": "Normalize o deslocamento antes de usar slice, inclusive para k negativo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function girar(xs,k){\n  if(!xs.length)return [];\n  const n=xs.length;\n  k=___0___;\n  return xs.slice(n-k).concat(xs.slice(0,n-k));\n}\nconsole.log(JSON.stringify([girar([1,2,3,4],5),girar([1,2,3,4],-1),girar([],2)]));",
+    "answers": [
+      [
+        "((k % n) + n) % n"
+      ]
+    ],
+    "expected": "[[4,1,2,3],[2,3,4,1],[]]",
+    "hint": "O módulo normalizado coloca k entre zero e n-1.",
+    "explanation": "O módulo normalizado coloca k entre zero e n-1."
+  },
+  {
+    "id": "arrays-hard-13",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 13,
+    "title": "Maior soma de subarray contínuo",
+    "description": "Em cada posição, escolha entre reiniciar a soma ou continuar o trecho. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function maxima(xs){\n  let atual=xs[0],melhor=xs[0];\n  for(const n of xs.slice(1)){\n    atual=___0___;\n    melhor=Math.max(melhor,atual);\n  }\n  return melhor;\n}\nconsole.log(JSON.stringify([maxima([-2,3,-1,4,-8]),maxima([-5,-2,-7])]));",
+    "answers": [
+      [
+        "Math.max(n,atual+n)"
+      ]
+    ],
+    "expected": "[6,-2]",
+    "hint": "A soma deve aceitar subarrays inteiramente negativos.",
+    "explanation": "A soma deve aceitar subarrays inteiramente negativos."
+  },
+  {
+    "id": "arrays-hard-14",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 14,
+    "title": "Produtos sem o próprio elemento",
+    "description": "Multiplique o prefixo já salvo pelo produto dos itens à direita. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function produtos(xs){\n  const r=[];let p=1;\n  for(let i=0;i<xs.length;i++){r[i]=p;p*=xs[i];}\n  p=1;\n  for(let i=xs.length-1;i>=0;i--){\n    r[i]*=___0___;p*=xs[i];\n  }\n  return r;\n}\nconsole.log(JSON.stringify([produtos([2,3,4]),produtos([0,2,3])]));",
+    "answers": [
+      [
+        "p"
+      ]
+    ],
+    "expected": "[[12,8,6],[6,0,0]]",
+    "hint": "Os produtos de prefixo e sufixo evitam divisão, funcionando com zero.",
+    "explanation": "Os produtos de prefixo e sufixo evitam divisão, funcionando com zero."
+  },
+  {
+    "id": "arrays-hard-15",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 15,
+    "title": "Próximo valor maior com pilha",
+    "description": "Retire índices da pilha enquanto o valor atual superar o valor pendente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function proximos(xs){\n  const r=Array(xs.length).fill(null),pilha=[];\n  for(let i=0;i<xs.length;i++){\n    while(pilha.length && ___0___){\n      r[pilha.pop()]=xs[i];\n    }\n    pilha.push(i);\n  }\n  return r;\n}\nconsole.log(JSON.stringify(proximos([2,1,3,3,4])));",
+    "answers": [
+      [
+        "xs[pilha.at(-1)] < xs[i]"
+      ]
+    ],
+    "expected": "[3,3,4,4,null]",
+    "hint": "Igualdade não basta: o próximo valor deve ser estritamente maior.",
+    "explanation": "Igualdade não basta: o próximo valor deve ser estritamente maior."
+  },
+  {
+    "id": "arrays-hard-16",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 16,
+    "title": "Comprimento da subsequência crescente",
+    "description": "Atualize o melhor comprimento quando uma posição anterior puder ser estendida. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function crescente(xs){\n  const dp=Array(xs.length).fill(1);\n  for(let i=0;i<xs.length;i++)for(let j=0;j<i;j++){\n    if(xs[j]<xs[i])dp[i]=___0___;\n  }\n  return Math.max(0,...dp);\n}\nconsole.log(JSON.stringify([crescente([3,1,2,5,4]),crescente([2,2]),crescente([])]));",
+    "answers": [
+      [
+        "Math.max(dp[i],dp[j]+1)"
+      ]
+    ],
+    "expected": "[3,1,0]",
+    "hint": "A subsequência não precisa ocupar posições adjacentes.",
+    "explanation": "A subsequência não precisa ocupar posições adjacentes."
+  },
+  {
+    "id": "arrays-hard-17",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 17,
+    "title": "Permutações por remoção de posição",
+    "description": "Monte a lista restante excluindo somente a posição escolhida. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function permutar(xs){\n  if(!xs.length)return [[]];\n  return xs.flatMap((x,i)=>{\n    const resto=___0___;\n    return permutar(resto).map(p=>[x,...p]);\n  });\n}\nconsole.log(JSON.stringify(permutar([1,2,3])));",
+    "answers": [
+      [
+        "xs.filter((_,j)=>j!==i)"
+      ]
+    ],
+    "expected": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]",
+    "hint": "Remova por índice para não descartar outros valores iguais.",
+    "explanation": "Remova por índice para não descartar outros valores iguais."
+  },
+  {
+    "id": "arrays-hard-18",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 18,
+    "title": "Subconjuntos por expansão",
+    "description": "Acrescente uma versão de cada subconjunto contendo o novo item. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const xs=[\"a\",\"b\"];\nlet conjuntos=[[]];\nfor(const x of xs){\n  conjuntos=conjuntos.concat(conjuntos.map(s=>___0___));\n}\nconsole.log(JSON.stringify(conjuntos));",
+    "answers": [
+      [
+        "[...s,x]"
+      ]
+    ],
+    "expected": "[[],[\"a\"],[\"b\"],[\"a\",\"b\"]]",
+    "hint": "Cada item dobra a quantidade de subconjuntos.",
+    "explanation": "Cada item dobra a quantidade de subconjuntos."
+  },
+  {
+    "id": "arrays-hard-19",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 19,
+    "title": "Rotacionar matriz noventa graus",
+    "description": "Leia as linhas de baixo para cima para construir cada nova linha. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const a=[[1,2],[3,4],[5,6]];\nconst girada=a[0].map((_,col)=>a.map((_,i)=>___0___));\nconsole.log(JSON.stringify(girada));",
+    "answers": [
+      [
+        "a[a.length-1-i][col]"
+      ]
+    ],
+    "expected": "[[5,3,1],[6,4,2]]",
+    "hint": "A rotação horária converte colunas em linhas invertidas.",
+    "explanation": "A rotação horária converte colunas em linhas invertidas."
+  },
+  {
+    "id": "arrays-hard-20",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 20,
+    "title": "Percorrer matriz em espiral",
+    "description": "Após a primeira linha, extraia o último elemento de cada linha restante. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function espiral(m){\n  const a=m.map(l=>[...l]),r=[];\n  while(a.length){\n    r.push(...a.shift());\n    for(const linha of a)if(linha.length)r.push(___0___);\n    if(a.length)r.push(...a.pop().reverse());\n    for(let i=a.length-1;i>=0;i--)if(a[i].length)r.push(a[i].shift());\n  }\n  return r;\n}\nconsole.log(JSON.stringify([espiral([[1,2,3],[4,5,6],[7,8,9]]),espiral([[1],[2],[3]])]));",
+    "answers": [
+      [
+        "linha.pop()"
+      ]
+    ],
+    "expected": "[[1,2,3,6,9,8,7,4,5],[1,2,3]]",
+    "hint": "pop recolhe a borda direita antes de percorrer a borda inferior.",
+    "explanation": "pop recolhe a borda direita antes de percorrer a borda inferior."
+  },
+  {
+    "id": "arrays-hard-21",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 21,
+    "title": "Histograma de frequências em buckets",
+    "description": "Incremente a posição correspondente a cada valor inteiro entre 0 e 4. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const valores=[4,1,4,0,1,4],frequencias=Array(5).fill(0);\nfor(const n of valores)___0___;\nconsole.log(JSON.stringify(frequencias));",
+    "answers": [
+      [
+        "frequencias[n]++"
+      ]
+    ],
+    "expected": "[1,2,0,0,3]",
+    "hint": "Cada índice representa um possível valor da entrada.",
+    "explanation": "Cada índice representa um possível valor da entrada."
+  },
+  {
+    "id": "arrays-hard-22",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 22,
+    "title": "Ordenação por contagem",
+    "description": "Expanda cada frequência em cópias do próprio índice. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const contagens=[1,2,0,1];\nconst ordenados=contagens.flatMap((n,valor)=>___0___);\nconsole.log(JSON.stringify(ordenados));",
+    "answers": [
+      [
+        "Array(n).fill(valor)"
+      ]
+    ],
+    "expected": "[0,1,1,3]",
+    "hint": "Os índices já estão em ordem crescente.",
+    "explanation": "Os índices já estão em ordem crescente."
+  },
+  {
+    "id": "arrays-hard-23",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 23,
+    "title": "Separar buracos de undefined",
+    "description": "Teste a existência do índice, sem confundir um buraco com undefined explícito. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const xs=[,undefined,3];\nconst presentes=Array.from({length:xs.length},(_,i)=>___0___);\nconsole.log(JSON.stringify(presentes));",
+    "answers": [
+      [
+        "i in xs"
+      ]
+    ],
+    "expected": "[false,true,true]",
+    "hint": "in verifica se a posição existe, independentemente do valor.",
+    "explanation": "in verifica se a posição existe, independentemente do valor."
+  },
+  {
+    "id": "arrays-hard-24",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 24,
+    "title": "Criar linhas independentes",
+    "description": "Use um callback em Array.from para criar um array novo em cada linha. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const matriz=Array.from({length:3},()=>___0___);\nmatriz[0][0]=7;\nconsole.log(JSON.stringify(matriz));",
+    "answers": [
+      [
+        "Array(2).fill(0)"
+      ]
+    ],
+    "expected": "[[7,0],[0,0],[0,0]]",
+    "hint": "fill com um único array externo compartilharia a mesma referência.",
+    "explanation": "fill com um único array externo compartilharia a mesma referência."
+  },
+  {
+    "id": "arrays-hard-25",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 25,
+    "title": "Interseção com multiplicidades",
+    "description": "Remova da cópia da segunda lista cada ocorrência já utilizada. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function intersecao(a,b){\n  const reserva=[...b],r=[];\n  for(const x of a){\n    const i=reserva.indexOf(x);\n    if(i!==-1){r.push(x);___0___;}\n  }\n  return r;\n}\nconsole.log(JSON.stringify(intersecao([1,2,2,2,3],[2,2,4])));",
+    "answers": [
+      [
+        "reserva.splice(i,1)"
+      ]
+    ],
+    "expected": "[2,2]",
+    "hint": "Consumir a ocorrência impede usá-la mais de uma vez.",
+    "explanation": "Consumir a ocorrência impede usá-la mais de uma vez."
+  },
+  {
+    "id": "arrays-hard-26",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 26,
+    "title": "Misturar posições com Fisher-Yates",
+    "description": "Troque os elementos i e j por desestruturação; o gerador é fixo para o teste. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const xs=[1,2,3,4],sortear=()=>0;\nfor(let i=xs.length-1;i>0;i--){\n  const j=Math.floor(sortear()*(i+1));\n  [xs[i],xs[j]]=___0___;\n}\nconsole.log(JSON.stringify(xs));",
+    "answers": [
+      [
+        "[xs[j],xs[i]]"
+      ]
+    ],
+    "expected": "[2,3,4,1]",
+    "hint": "A troca simultânea evita perder um dos valores.",
+    "explanation": "A troca simultânea evita perder um dos valores."
+  },
+  {
+    "id": "arrays-hard-27",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 27,
+    "title": "Janelas completas sobrepostas",
+    "description": "Gere apenas os inícios de janelas que cabem inteiras no array. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function janelas(xs,k){\n  return Array.from({length:___0___},(_,i)=>xs.slice(i,i+k));\n}\nconsole.log(JSON.stringify([janelas([1,2,3,4],3),janelas([1],2)]));",
+    "answers": [
+      [
+        "Math.max(0,xs.length-k+1)"
+      ]
+    ],
+    "expected": "[[[1,2,3],[2,3,4]],[]]",
+    "hint": "O número de janelas completas é n-k+1, limitado a zero.",
+    "explanation": "O número de janelas completas é n-k+1, limitado a zero."
+  },
+  {
+    "id": "arrays-hard-28",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 28,
+    "title": "Distância de edição entre sequências",
+    "description": "Quando os itens diferirem, use o menor custo de inserção, remoção ou substituição. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function distancia(a,b){\n  const dp=Array.from({length:a.length+1},()=>Array(b.length+1).fill(0));\n  for(let i=0;i<=a.length;i++)dp[i][0]=i;\n  for(let j=0;j<=b.length;j++)dp[0][j]=j;\n  for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++){\n    dp[i][j]=a[i-1]===b[j-1]?dp[i-1][j-1]:1+___0___;\n  }\n  return dp[a.length][b.length];\n}\nconsole.log(JSON.stringify([distancia([1,2,3],[1,4,3]),distancia([],[1,2])]));",
+    "answers": [
+      [
+        "Math.min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1])"
+      ]
+    ],
+    "expected": "[1,2]",
+    "hint": "As três células vizinhas representam as três operações permitidas.",
+    "explanation": "As três células vizinhas representam as três operações permitidas."
+  },
+  {
+    "id": "arrays-hard-29",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 29,
+    "title": "Encontrar posições de um padrão",
+    "description": "Compare cada elemento do padrão com a posição correspondente da entrada. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function localizar(xs,padrao){\n  const r=[];\n  for(let i=0;i<=xs.length-padrao.length;i++){\n    if(padrao.every((x,j)=>___0___))r.push(i);\n  }\n  return r;\n}\nconsole.log(JSON.stringify(localizar([1,1,1,2,1,1],[1,1])));",
+    "answers": [
+      [
+        "x === xs[i+j]"
+      ]
+    ],
+    "expected": "[0,1,4]",
+    "hint": "Os inícios podem se sobrepor; i marca o início e j o deslocamento.",
+    "explanation": "Os inícios podem se sobrepor; i marca o início e j o deslocamento."
+  },
+  {
+    "id": "arrays-hard-30",
+    "topic": "arrays",
+    "level": "hard",
+    "number": 30,
+    "title": "Compactar no próprio array",
+    "description": "Depois de copiar os valores não nulos, ajuste o comprimento ao total escrito. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const xs=[1,null,0,null,3];\nlet escrita=0;\nfor(let leitura=0;leitura<xs.length;leitura++){\n  if(xs[leitura]!==null)xs[escrita++]=xs[leitura];\n}\nxs.length=___0___;\nconsole.log(JSON.stringify(xs));",
+    "answers": [
+      [
+        "escrita"
+      ]
+    ],
+    "expected": "[1,0,3]",
+    "hint": "Reduzir length remove a cauda antiga sem criar outro array.",
+    "explanation": "Reduzir length remove a cauda antiga sem criar outro array."
+  },
+  {
+    "id": "objects-easy-01",
+    "topic": "objects",
+    "level": "easy",
+    "number": 1,
+    "title": "Ler nome no cadastro",
+    "description": "Complete o acesso com ponto ao campo nome. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoa={nome:\"Lia\",idade:21};\nconst nome=pessoa.___0___;\nconsole.log(JSON.stringify(nome));",
+    "answers": [
+      [
+        "nome"
+      ]
+    ],
+    "expected": "\"Lia\"",
+    "hint": "O nome da propriedade vem depois do ponto.",
+    "explanation": "O nome da propriedade vem depois do ponto."
+  },
+  {
+    "id": "objects-easy-02",
+    "topic": "objects",
+    "level": "easy",
+    "number": 2,
+    "title": "Propriedade com espaço",
+    "description": "Use colchetes com string para ler uma chave que contém espaço. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const item={\"preço final\":25};\nconst preco=item[___0___];\nconsole.log(JSON.stringify(preco));",
+    "answers": [
+      [
+        "\"preço final\""
+      ]
+    ],
+    "expected": "25",
+    "hint": "Chaves com espaços precisam de acesso por colchetes.",
+    "explanation": "Chaves com espaços precisam de acesso por colchetes."
+  },
+  {
+    "id": "objects-easy-03",
+    "topic": "objects",
+    "level": "easy",
+    "number": 3,
+    "title": "Adicionar campo de contato",
+    "description": "Acrescente uma propriedade email ao objeto existente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const usuario={nome:\"Ivo\"};\nusuario.___0___=\"ivo@exemplo.test\";\nconsole.log(JSON.stringify(usuario));",
+    "answers": [
+      [
+        "email"
+      ]
+    ],
+    "expected": "{\"nome\":\"Ivo\",\"email\":\"ivo@exemplo.test\"}",
+    "hint": "Atribuir uma propriedade ausente cria o campo.",
+    "explanation": "Atribuir uma propriedade ausente cria o campo."
+  },
+  {
+    "id": "objects-easy-04",
+    "topic": "objects",
+    "level": "easy",
+    "number": 4,
+    "title": "Atualizar idade no perfil",
+    "description": "Substitua o valor do campo idade. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const perfil={nome:\"Ana\",idade:19};\nperfil.idade=___0___;\nconsole.log(JSON.stringify(perfil));",
+    "answers": [
+      [
+        "20"
+      ]
+    ],
+    "expected": "{\"nome\":\"Ana\",\"idade\":20}",
+    "hint": "const impede reatribuir perfil, mas não alterar suas propriedades.",
+    "explanation": "const impede reatribuir perfil, mas não alterar suas propriedades."
+  },
+  {
+    "id": "objects-easy-05",
+    "topic": "objects",
+    "level": "easy",
+    "number": 5,
+    "title": "Excluir um campo temporário",
+    "description": "Use o operador delete para remover a propriedade rascunho. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const post={titulo:\"Node\",rascunho:true};\n___0___ post.rascunho;\nconsole.log(JSON.stringify(post));",
+    "answers": [
+      [
+        "delete"
+      ]
+    ],
+    "expected": "{\"titulo\":\"Node\"}",
+    "hint": "delete remove a propriedade, não apenas seu valor.",
+    "explanation": "delete remove a propriedade, não apenas seu valor."
+  },
+  {
+    "id": "objects-easy-06",
+    "topic": "objects",
+    "level": "easy",
+    "number": 6,
+    "title": "Listar chaves de configuração",
+    "description": "Complete Object.keys para obter as chaves enumeráveis próprias. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const config={tema:\"escuro\",fonte:16};\nconst chaves=Object.___0___(config);\nconsole.log(JSON.stringify(chaves));",
+    "answers": [
+      [
+        "keys"
+      ]
+    ],
+    "expected": "[\"tema\",\"fonte\"]",
+    "hint": "keys retorna um array de nomes de propriedades.",
+    "explanation": "keys retorna um array de nomes de propriedades."
+  },
+  {
+    "id": "objects-easy-07",
+    "topic": "objects",
+    "level": "easy",
+    "number": 7,
+    "title": "Listar valores do placar",
+    "description": "Complete Object.values para obter os valores. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const placar={azul:3,verde:5};\nconst pontos=Object.___0___(placar);\nconsole.log(JSON.stringify(pontos));",
+    "answers": [
+      [
+        "values"
+      ]
+    ],
+    "expected": "[3,5]",
+    "hint": "values omite os nomes das propriedades.",
+    "explanation": "values omite os nomes das propriedades."
+  },
+  {
+    "id": "objects-easy-08",
+    "topic": "objects",
+    "level": "easy",
+    "number": 8,
+    "title": "Transformar objeto em pares",
+    "description": "Use Object.entries para obter pares de chave e valor. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const estoque={lapis:2,caneta:4};\nconst pares=Object.___0___(estoque);\nconsole.log(JSON.stringify(pares));",
+    "answers": [
+      [
+        "entries"
+      ]
+    ],
+    "expected": "[[\"lapis\",2],[\"caneta\",4]]",
+    "hint": "Cada item do resultado é um par [chave,valor].",
+    "explanation": "Cada item do resultado é um par [chave,valor]."
+  },
+  {
+    "id": "objects-easy-09",
+    "topic": "objects",
+    "level": "easy",
+    "number": 9,
+    "title": "Checar propriedade própria",
+    "description": "Use Object.hasOwn para verificar um campo que contém false. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const permissoes={editar:false};\nconst existe=Object.___0___(permissoes,\"editar\");\nconsole.log(JSON.stringify(existe));",
+    "answers": [
+      [
+        "hasOwn"
+      ]
+    ],
+    "expected": "true",
+    "hint": "A existência do campo independe de seu valor ser truthy.",
+    "explanation": "A existência do campo independe de seu valor ser truthy."
+  },
+  {
+    "id": "objects-easy-10",
+    "topic": "objects",
+    "level": "easy",
+    "number": 10,
+    "title": "Ler campo escolhido em variável",
+    "description": "Acesse a chave armazenada na variável campo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoa={nome:\"Bia\",cidade:\"Recife\"},campo=\"cidade\";\nconst valor=pessoa[___0___];\nconsole.log(JSON.stringify(valor));",
+    "answers": [
+      [
+        "campo"
+      ]
+    ],
+    "expected": "\"Recife\"",
+    "hint": "Colchetes avaliam a variável; aspas buscariam a chave literal campo.",
+    "explanation": "Colchetes avaliam a variável; aspas buscariam a chave literal campo."
+  },
+  {
+    "id": "objects-easy-11",
+    "topic": "objects",
+    "level": "easy",
+    "number": 11,
+    "title": "Extrair campo por desestruturação",
+    "description": "Use chaves para extrair nome do objeto. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoa={nome:\"Caio\",idade:30};\nconst ___0___=pessoa;\nconsole.log(JSON.stringify(nome));",
+    "answers": [
+      [
+        "{nome}"
+      ]
+    ],
+    "expected": "\"Caio\"",
+    "hint": "Desestruturação de objetos seleciona propriedades pelo nome.",
+    "explanation": "Desestruturação de objetos seleciona propriedades pelo nome."
+  },
+  {
+    "id": "objects-easy-12",
+    "topic": "objects",
+    "level": "easy",
+    "number": 12,
+    "title": "Renomear variável extraída",
+    "description": "Extraia nome para uma variável chamada apelido. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const {nome:___0___}={nome:\"Guga\"};\nconsole.log(JSON.stringify(apelido));",
+    "answers": [
+      [
+        "apelido"
+      ]
+    ],
+    "expected": "\"Guga\"",
+    "hint": "O lado direito dos dois-pontos é o nome local.",
+    "explanation": "O lado direito dos dois-pontos é o nome local."
+  },
+  {
+    "id": "objects-easy-13",
+    "topic": "objects",
+    "level": "easy",
+    "number": 13,
+    "title": "Padrão para propriedade ausente",
+    "description": "Defina 10 como padrão da propriedade limite. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const {limite=___0___}={};\nconsole.log(JSON.stringify(limite));",
+    "answers": [
+      [
+        "10"
+      ]
+    ],
+    "expected": "10",
+    "hint": "O padrão é aplicado quando o valor extraído é undefined.",
+    "explanation": "O padrão é aplicado quando o valor extraído é undefined."
+  },
+  {
+    "id": "objects-easy-14",
+    "topic": "objects",
+    "level": "easy",
+    "number": 14,
+    "title": "Objeto com propriedade abreviada",
+    "description": "Use a sintaxe abreviada para guardar a variável nome. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const nome=\"Lia\";\nconst pessoa={___0___};\nconsole.log(JSON.stringify(pessoa));",
+    "answers": [
+      [
+        "nome"
+      ]
+    ],
+    "expected": "{\"nome\":\"Lia\"}",
+    "hint": "Quando chave e variável têm o mesmo nome, basta escrevê-lo uma vez.",
+    "explanation": "Quando chave e variável têm o mesmo nome, basta escrevê-lo uma vez."
+  },
+  {
+    "id": "objects-easy-15",
+    "topic": "objects",
+    "level": "easy",
+    "number": 15,
+    "title": "Chave calculada na criação",
+    "description": "Use colchetes na chave para aproveitar a variável campo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const campo=\"pontos\";\nconst placar={___0___:7};\nconsole.log(JSON.stringify(placar));",
+    "answers": [
+      [
+        "[campo]"
+      ]
+    ],
+    "expected": "{\"pontos\":7}",
+    "hint": "Chaves calculadas permitem criar nomes dinamicamente.",
+    "explanation": "Chaves calculadas permitem criar nomes dinamicamente."
+  },
+  {
+    "id": "objects-easy-16",
+    "topic": "objects",
+    "level": "easy",
+    "number": 16,
+    "title": "Ler endereço aninhado",
+    "description": "Acesse cidade dentro do objeto endereco. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoa={endereco:{cidade:\"Natal\"}};\nconst cidade=___0___;\nconsole.log(JSON.stringify(cidade));",
+    "answers": [
+      [
+        "pessoa.endereco.cidade"
+      ]
+    ],
+    "expected": "\"Natal\"",
+    "hint": "Cada ponto avança um nível na estrutura.",
+    "explanation": "Cada ponto avança um nível na estrutura."
+  },
+  {
+    "id": "objects-easy-17",
+    "topic": "objects",
+    "level": "easy",
+    "number": 17,
+    "title": "Somar valores de duas propriedades",
+    "description": "Some os campos entrada e bonus do objeto. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const conta={entrada:10,bonus:3};\nconst total=___0___;\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "conta.entrada + conta.bonus"
+      ]
+    ],
+    "expected": "13",
+    "hint": "Os dois valores são números armazenados em propriedades distintas.",
+    "explanation": "Os dois valores são números armazenados em propriedades distintas."
+  },
+  {
+    "id": "objects-easy-18",
+    "topic": "objects",
+    "level": "easy",
+    "number": 18,
+    "title": "Copiar cartão de produto",
+    "description": "Faça uma cópia rasa com spread antes de alterar o preço. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const original={nome:\"caderno\",preco:12};\nconst copia={___0___};\ncopia.preco=9;\nconsole.log(JSON.stringify([original.preco,copia.preco]));",
+    "answers": [
+      [
+        "...original"
+      ]
+    ],
+    "expected": "[12,9]",
+    "hint": "O spread cria um objeto novo para as propriedades do primeiro nível.",
+    "explanation": "O spread cria um objeto novo para as propriedades do primeiro nível."
+  },
+  {
+    "id": "objects-easy-19",
+    "topic": "objects",
+    "level": "easy",
+    "number": 19,
+    "title": "Combinar preferências",
+    "description": "Espalhe os ajustes após os padrões para que o usuário tenha prioridade. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const padrao={tema:\"claro\",fonte:14},ajuste={tema:\"escuro\"};\nconst final={...padrao,___0___};\nconsole.log(JSON.stringify(final));",
+    "answers": [
+      [
+        "...ajuste"
+      ]
+    ],
+    "expected": "{\"tema\":\"escuro\",\"fonte\":14}",
+    "hint": "A última atribuição de uma mesma chave vence.",
+    "explanation": "A última atribuição de uma mesma chave vence."
+  },
+  {
+    "id": "objects-easy-20",
+    "topic": "objects",
+    "level": "easy",
+    "number": 20,
+    "title": "Método que usa o próprio objeto",
+    "description": "Use this para ler saldo dentro de um método comum. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const conta={saldo:20,consultar(){return ___0___;}};\nconsole.log(JSON.stringify(conta.consultar()));",
+    "answers": [
+      [
+        "this.saldo"
+      ]
+    ],
+    "expected": "20",
+    "hint": "Ao chamar conta.consultar(), this aponta para conta.",
+    "explanation": "Ao chamar conta.consultar(), this aponta para conta."
+  },
+  {
+    "id": "objects-easy-21",
+    "topic": "objects",
+    "level": "easy",
+    "number": 21,
+    "title": "Serializar dados em JSON",
+    "description": "Complete o método que transforma o objeto em string JSON. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const dados={ok:true};\nconst texto=JSON.___0___(dados);\nconsole.log(JSON.stringify(texto));",
+    "answers": [
+      [
+        "stringify"
+      ]
+    ],
+    "expected": "\"{\\\"ok\\\":true}\"",
+    "hint": "stringify produz texto, não um novo objeto.",
+    "explanation": "stringify produz texto, não um novo objeto."
+  },
+  {
+    "id": "objects-easy-22",
+    "topic": "objects",
+    "level": "easy",
+    "number": 22,
+    "title": "Ler objeto de JSON",
+    "description": "Complete o método que interpreta o texto JSON. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const texto='{\"total\":4}';\nconst dados=JSON.___0___(texto);\nconsole.log(JSON.stringify(dados.total));",
+    "answers": [
+      [
+        "parse"
+      ]
+    ],
+    "expected": "4",
+    "hint": "parse cria o valor JavaScript representado pelo JSON.",
+    "explanation": "parse cria o valor JavaScript representado pelo JSON."
+  },
+  {
+    "id": "objects-easy-23",
+    "topic": "objects",
+    "level": "easy",
+    "number": 23,
+    "title": "Contar propriedades de formulário",
+    "description": "Conte as chaves enumeráveis do objeto. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const formulario={nome:\"Ana\",cidade:\"SP\",ativo:true};\nconst total=___0___;\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "Object.keys(formulario).length"
+      ]
+    ],
+    "expected": "3",
+    "hint": "Objetos comuns não têm uma propriedade length automática.",
+    "explanation": "Objetos comuns não têm uma propriedade length automática."
+  },
+  {
+    "id": "objects-easy-24",
+    "topic": "objects",
+    "level": "easy",
+    "number": 24,
+    "title": "Detectar ausência de campo",
+    "description": "Use typeof para representar com segurança o valor de uma chave ausente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const item={id:1};\nconst tipo=___0___;\nconsole.log(JSON.stringify(tipo));",
+    "answers": [
+      [
+        "typeof item.descricao"
+      ]
+    ],
+    "expected": "\"undefined\"",
+    "hint": "Ler uma propriedade ausente devolve undefined.",
+    "explanation": "Ler uma propriedade ausente devolve undefined."
+  },
+  {
+    "id": "objects-easy-25",
+    "topic": "objects",
+    "level": "easy",
+    "number": 25,
+    "title": "Valor padrão preservando zero",
+    "description": "Use ?? para aplicar 5 apenas quando o campo estiver ausente ou nulo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const config={tentativas:0};\nconst n=config.tentativas ___0___ 5;\nconsole.log(JSON.stringify(n));",
+    "answers": [
+      [
+        "??"
+      ]
+    ],
+    "expected": "0",
+    "hint": "|| substituiria também o zero, enquanto ?? o preserva.",
+    "explanation": "|| substituiria também o zero, enquanto ?? o preserva."
+  },
+  {
+    "id": "objects-easy-26",
+    "topic": "objects",
+    "level": "easy",
+    "number": 26,
+    "title": "Acesso opcional ao telefone",
+    "description": "Use encadeamento opcional para acessar telefone sem contato definido. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoa={nome:\"Ana\"};\nconst numero=pessoa.contato___0___telefone ?? \"não informado\";\nconsole.log(JSON.stringify(numero));",
+    "answers": [
+      [
+        "?."
+      ]
+    ],
+    "expected": "\"não informado\"",
+    "hint": "?. interrompe o acesso se o valor intermediário for null ou undefined.",
+    "explanation": "?. interrompe o acesso se o valor intermediário for null ou undefined."
+  },
+  {
+    "id": "objects-easy-27",
+    "topic": "objects",
+    "level": "easy",
+    "number": 27,
+    "title": "Criar objeto a partir de pares",
+    "description": "Complete Object.fromEntries para converter pares em propriedades. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pares=[[\"nome\",\"Bia\"],[\"nivel\",2]];\nconst pessoa=Object.___0___(pares);\nconsole.log(JSON.stringify(pessoa));",
+    "answers": [
+      [
+        "fromEntries"
+      ]
+    ],
+    "expected": "{\"nome\":\"Bia\",\"nivel\":2}",
+    "hint": "fromEntries faz a operação inversa de entries.",
+    "explanation": "fromEntries faz a operação inversa de entries."
+  },
+  {
+    "id": "objects-easy-28",
+    "topic": "objects",
+    "level": "easy",
+    "number": 28,
+    "title": "Separar campo privado do restante",
+    "description": "Use rest para reunir as propriedades restantes após extrair senha. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const cadastro={nome:\"Ivo\",senha:\"exemplo\",ativo:true};\nconst {senha,___0___}=cadastro;\nconsole.log(JSON.stringify(publico));",
+    "answers": [
+      [
+        "...publico"
+      ]
+    ],
+    "expected": "{\"nome\":\"Ivo\",\"ativo\":true}",
+    "hint": "Rest cria outro objeto sem as propriedades já extraídas.",
+    "explanation": "Rest cria outro objeto sem as propriedades já extraídas."
+  },
+  {
+    "id": "objects-easy-29",
+    "topic": "objects",
+    "level": "easy",
+    "number": 29,
+    "title": "Incrementar contador do objeto",
+    "description": "Use a atribuição composta para somar uma visita. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pagina={visitas:4};\npagina.visitas ___0___ 1;\nconsole.log(JSON.stringify(pagina));",
+    "answers": [
+      [
+        "+="
+      ]
+    ],
+    "expected": "{\"visitas\":5}",
+    "hint": "+= lê o valor atual e salva a soma.",
+    "explanation": "+= lê o valor atual e salva a soma."
+  },
+  {
+    "id": "objects-easy-30",
+    "topic": "objects",
+    "level": "easy",
+    "number": 30,
+    "title": "Objetos iguais em conteúdo são distintos",
+    "description": "Preencha o booleano esperado para a igualdade estrita entre objetos criados separadamente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const a={id:1},b={id:1};\nconst previsto=___0___;\nconst observado=a===b;\nconsole.log(JSON.stringify([previsto,observado]));",
+    "answers": [
+      [
+        "false"
+      ]
+    ],
+    "expected": "[false,false]",
+    "hint": "=== compara identidade de objetos, não igualdade das propriedades.",
+    "explanation": "=== compara identidade de objetos, não igualdade das propriedades."
+  },
+  {
+    "id": "objects-medium-01",
+    "topic": "objects",
+    "level": "medium",
+    "number": 1,
+    "title": "Somar quantidades do inventário",
+    "description": "Reduza os valores numéricos do objeto usando soma. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const estoque={lapis:3,caneta:5,borracha:2};\nconst total=Object.values(estoque).reduce((s,n)=>___0___,0);\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "s+n",
+        "n+s"
+      ]
+    ],
+    "expected": "10",
+    "hint": "Object.values permite usar reduce nos valores.",
+    "explanation": "Object.values permite usar reduce nos valores."
+  },
+  {
+    "id": "objects-medium-02",
+    "topic": "objects",
+    "level": "medium",
+    "number": 2,
+    "title": "Filtrar campos sem preenchimento",
+    "description": "Exclua apenas pares cujo valor seja null ou undefined. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const origem={nome:\"Ana\",idade:0,telefone:null,extra:undefined};\nconst limpo=Object.fromEntries(Object.entries(origem).filter(([k,v])=>___0___));\nconsole.log(JSON.stringify(limpo));",
+    "answers": [
+      [
+        "v != null",
+        "v !== null && v !== undefined"
+      ]
+    ],
+    "expected": "{\"nome\":\"Ana\",\"idade\":0}",
+    "hint": "A condição preserva valores válidos como zero.",
+    "explanation": "A condição preserva valores válidos como zero."
+  },
+  {
+    "id": "objects-medium-03",
+    "topic": "objects",
+    "level": "medium",
+    "number": 3,
+    "title": "Converter preços sem mudar as chaves",
+    "description": "Mapeie os pares dobrando somente o valor. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const precos={livro:10,caneta:3};\nconst novos=Object.fromEntries(Object.entries(precos).map(([k,v])=>___0___));\nconsole.log(JSON.stringify(novos));",
+    "answers": [
+      [
+        "[k,v*2]"
+      ]
+    ],
+    "expected": "{\"livro\":20,\"caneta\":6}",
+    "hint": "fromEntries exige um array de pares.",
+    "explanation": "fromEntries exige um array de pares."
+  },
+  {
+    "id": "objects-medium-04",
+    "topic": "objects",
+    "level": "medium",
+    "number": 4,
+    "title": "Renomear uma propriedade sem mutar",
+    "description": "Extraia nome e use seu valor como titulo no novo objeto. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const original={nome:\"Curso\",horas:8};\nconst {nome,...resto}=original;\nconst novo={...resto,titulo:___0___};\nconsole.log(JSON.stringify([novo,original]));",
+    "answers": [
+      [
+        "nome"
+      ]
+    ],
+    "expected": "[{\"horas\":8,\"titulo\":\"Curso\"},{\"nome\":\"Curso\",\"horas\":8}]",
+    "hint": "Rest conserva os campos restantes e a nova chave recebe o valor extraído.",
+    "explanation": "Rest conserva os campos restantes e a nova chave recebe o valor extraído."
+  },
+  {
+    "id": "objects-medium-05",
+    "topic": "objects",
+    "level": "medium",
+    "number": 5,
+    "title": "Selecionar somente campos permitidos",
+    "description": "Transforme a lista de chaves permitidas em pares com os valores de origem. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const usuario={nome:\"Ana\",email:\"a@exemplo.test\",token:\"privado\"};\nconst campos=[\"nome\",\"email\"];\nconst publico=Object.fromEntries(campos.map(k=>___0___));\nconsole.log(JSON.stringify(publico));",
+    "answers": [
+      [
+        "[k,usuario[k]]"
+      ]
+    ],
+    "expected": "{\"nome\":\"Ana\",\"email\":\"a@exemplo.test\"}",
+    "hint": "Selecionar explicitamente os campos evita copiar o token.",
+    "explanation": "Selecionar explicitamente os campos evita copiar o token."
+  },
+  {
+    "id": "objects-medium-06",
+    "topic": "objects",
+    "level": "medium",
+    "number": 6,
+    "title": "Omitir campos de uma lista",
+    "description": "Filtre entries removendo as chaves incluídas em excluir. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const dados={nome:\"Bia\",cache:4,temporario:true},excluir=[\"cache\",\"temporario\"];\nconst limpo=Object.fromEntries(Object.entries(dados).filter(([k])=>___0___));\nconsole.log(JSON.stringify(limpo));",
+    "answers": [
+      [
+        "!excluir.includes(k)"
+      ]
+    ],
+    "expected": "{\"nome\":\"Bia\"}",
+    "hint": "O predicado deve manter as chaves que não pertencem à lista.",
+    "explanation": "O predicado deve manter as chaves que não pertencem à lista."
+  },
+  {
+    "id": "objects-medium-07",
+    "topic": "objects",
+    "level": "medium",
+    "number": 7,
+    "title": "Indexar registros por identificador",
+    "description": "Crie pares de id e objeto para montar um índice. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoas=[{id:\"a\",nome:\"Ana\"},{id:\"b\",nome:\"Bia\"}];\nconst indice=Object.fromEntries(pessoas.map(p=>___0___));\nconsole.log(JSON.stringify(indice.b.nome));",
+    "answers": [
+      [
+        "[p.id,p]"
+      ]
+    ],
+    "expected": "\"Bia\"",
+    "hint": "O valor do índice continua sendo o registro inteiro.",
+    "explanation": "O valor do índice continua sendo o registro inteiro."
+  },
+  {
+    "id": "objects-medium-08",
+    "topic": "objects",
+    "level": "medium",
+    "number": 8,
+    "title": "Contar palavras em dicionário",
+    "description": "Incremente a contagem usando zero quando a palavra ainda não tiver aparecido. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const contagem=Object.create(null);\nfor(const palavra of [\"sol\",\"lua\",\"sol\"]){\n  contagem[palavra]=___0___;\n}\nconsole.log(JSON.stringify(contagem));",
+    "answers": [
+      [
+        "(contagem[palavra] ?? 0) + 1"
+      ]
+    ],
+    "expected": "{\"sol\":2,\"lua\":1}",
+    "hint": "Um dicionário sem protótipo não herda propriedades como toString.",
+    "explanation": "Um dicionário sem protótipo não herda propriedades como toString."
+  },
+  {
+    "id": "objects-medium-09",
+    "topic": "objects",
+    "level": "medium",
+    "number": 9,
+    "title": "Agrupar pedidos por estado",
+    "description": "Inicialize a lista do estado somente quando ainda estiver ausente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const grupos=Object.create(null);\nfor(const pedido of [{id:1,status:\"novo\"},{id:2,status:\"pago\"},{id:3,status:\"novo\"}]){\n  grupos[pedido.status] ___0___ [];\n  grupos[pedido.status].push(pedido.id);\n}\nconsole.log(JSON.stringify(grupos));",
+    "answers": [
+      [
+        "??="
+      ]
+    ],
+    "expected": "{\"novo\":[1,3],\"pago\":[2]}",
+    "hint": "??= evita recriar o grupo a cada pedido.",
+    "explanation": "??= evita recriar o grupo a cada pedido."
+  },
+  {
+    "id": "objects-medium-10",
+    "topic": "objects",
+    "level": "medium",
+    "number": 10,
+    "title": "Inverter tabela de códigos únicos",
+    "description": "Troque a posição da chave e do valor em cada par. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const codigos={br:\"Brasil\",pt:\"Portugal\"};\nconst inverso=Object.fromEntries(Object.entries(codigos).map(([k,v])=>___0___));\nconsole.log(JSON.stringify(inverso));",
+    "answers": [
+      [
+        "[v,k]"
+      ]
+    ],
+    "expected": "{\"Brasil\":\"br\",\"Portugal\":\"pt\"}",
+    "hint": "Neste exemplo os valores são únicos e podem virar chaves.",
+    "explanation": "Neste exemplo os valores são únicos e podem virar chaves."
+  },
+  {
+    "id": "objects-medium-11",
+    "topic": "objects",
+    "level": "medium",
+    "number": 11,
+    "title": "Comparar objetos rasos",
+    "description": "Além de contar chaves, compare cada valor correspondente com Object.is. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function igual(a,b){\n  const chaves=Object.keys(a);\n  return chaves.length===Object.keys(b).length && chaves.every(k=>Object.hasOwn(b,k) && ___0___);\n}\nconsole.log(JSON.stringify([igual({x:1},{x:1}),igual({x:1},{x:2}),igual({x:undefined},{y:undefined})]));",
+    "answers": [
+      [
+        "Object.is(a[k],b[k])"
+      ]
+    ],
+    "expected": "[true,false,false]",
+    "hint": "A existência da chave deve ser verificada além do valor.",
+    "explanation": "A existência da chave deve ser verificada além do valor."
+  },
+  {
+    "id": "objects-medium-12",
+    "topic": "objects",
+    "level": "medium",
+    "number": 12,
+    "title": "Atualizar endereço de forma imutável",
+    "description": "Copie também o objeto aninhado antes de alterar cidade. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoa={nome:\"Lia\",endereco:{cidade:\"Natal\",uf:\"RN\"}};\nconst nova={...pessoa,endereco:___0___};\nconsole.log(JSON.stringify([nova.endereco,pessoa.endereco.cidade]));",
+    "answers": [
+      [
+        "{...pessoa.endereco,cidade:\"Mossoró\"}"
+      ]
+    ],
+    "expected": "[{\"cidade\":\"Mossoró\",\"uf\":\"RN\"},\"Natal\"]",
+    "hint": "A cópia do primeiro nível não basta para isolar o endereço.",
+    "explanation": "A cópia do primeiro nível não basta para isolar o endereço."
+  },
+  {
+    "id": "objects-medium-13",
+    "topic": "objects",
+    "level": "medium",
+    "number": 13,
+    "title": "Limite da cópia rasa de objetos",
+    "description": "Preencha a quantidade que será observada no original após alterar o objeto compartilhado. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const a={estoque:{qtd:2}},b={...a};\nb.estoque.qtd=7;\nconst previsto=___0___;\nconsole.log(JSON.stringify([previsto,a.estoque.qtd,a.estoque===b.estoque]));",
+    "answers": [
+      [
+        "7"
+      ]
+    ],
+    "expected": "[7,7,true]",
+    "hint": "Spread conserva a referência dos valores que também são objetos.",
+    "explanation": "Spread conserva a referência dos valores que também são objetos."
+  },
+  {
+    "id": "objects-medium-14",
+    "topic": "objects",
+    "level": "medium",
+    "number": 14,
+    "title": "Desestruturação aninhada com padrão",
+    "description": "Defina uma cidade padrão quando o objeto endereco estiver ausente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const pessoa={nome:\"Ivo\"};\nconst {endereco:{cidade=___0___}={}}=pessoa;\nconsole.log(JSON.stringify(cidade));",
+    "answers": [
+      [
+        "\"sem cidade\""
+      ]
+    ],
+    "expected": "\"sem cidade\"",
+    "hint": "O objeto padrão externo evita desestruturar undefined.",
+    "explanation": "O objeto padrão externo evita desestruturar undefined."
+  },
+  {
+    "id": "objects-medium-15",
+    "topic": "objects",
+    "level": "medium",
+    "number": 15,
+    "title": "Extrair por chave dinâmica",
+    "description": "Use uma propriedade calculada na desestruturação. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const campo=\"nota\",dados={nota:8,nome:\"Ana\"};\nconst {___0___:valor}=dados;\nconsole.log(JSON.stringify(valor));",
+    "answers": [
+      [
+        "[campo]"
+      ]
+    ],
+    "expected": "8",
+    "hint": "Colchetes usam o conteúdo de campo como chave a extrair.",
+    "explanation": "Colchetes usam o conteúdo de campo como chave a extrair."
+  },
+  {
+    "id": "objects-medium-16",
+    "topic": "objects",
+    "level": "medium",
+    "number": 16,
+    "title": "Getter calculado de área",
+    "description": "Complete o getter com as duas dimensões do próprio objeto. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const retangulo={largura:4,altura:3,get area(){return ___0___;}};\nconsole.log(JSON.stringify(retangulo.area));",
+    "answers": [
+      [
+        "this.largura*this.altura"
+      ]
+    ],
+    "expected": "12",
+    "hint": "Um getter é lido como propriedade, sem parênteses.",
+    "explanation": "Um getter é lido como propriedade, sem parênteses."
+  },
+  {
+    "id": "objects-medium-17",
+    "topic": "objects",
+    "level": "medium",
+    "number": 17,
+    "title": "Setter que normaliza texto",
+    "description": "Normalize o argumento recebido antes de armazená-lo no campo interno. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const perfil={_nome:\"\",set nome(v){this._nome=___0___;},get nome(){return this._nome;}};\nperfil.nome=\" Ana \";\nconsole.log(JSON.stringify(perfil.nome));",
+    "answers": [
+      [
+        "v.trim()"
+      ]
+    ],
+    "expected": "\"Ana\"",
+    "hint": "O setter recebe o valor à direita da atribuição.",
+    "explanation": "O setter recebe o valor à direita da atribuição."
+  },
+  {
+    "id": "objects-medium-18",
+    "topic": "objects",
+    "level": "medium",
+    "number": 18,
+    "title": "Definir propriedade não enumerável",
+    "description": "Configure enumerable para esconder o campo em Object.keys. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const objeto={visivel:1};\nObject.defineProperty(objeto,\"interno\",{value:2,enumerable:___0___});\nconsole.log(JSON.stringify([Object.keys(objeto),objeto.interno]));",
+    "answers": [
+      [
+        "false"
+      ]
+    ],
+    "expected": "[[\"visivel\"],2]",
+    "hint": "Não enumerável não significa inacessível.",
+    "explanation": "Não enumerável não significa inacessível."
+  },
+  {
+    "id": "objects-medium-19",
+    "topic": "objects",
+    "level": "medium",
+    "number": 19,
+    "title": "Bloquear escrita em uma propriedade",
+    "description": "Configure writable para impedir reatribuição do campo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const item={};\nObject.defineProperty(item,\"id\",{value:7,writable:___0___,enumerable:true});\nconst alterou=Reflect.set(item,\"id\",9);\nconsole.log(JSON.stringify([alterou,item.id]));",
+    "answers": [
+      [
+        "false"
+      ]
+    ],
+    "expected": "[false,7]",
+    "hint": "Reflect.set devolve false quando não consegue gravar.",
+    "explanation": "Reflect.set devolve false quando não consegue gravar."
+  },
+  {
+    "id": "objects-medium-20",
+    "topic": "objects",
+    "level": "medium",
+    "number": 20,
+    "title": "Selar mantendo campos editáveis",
+    "description": "Use Object.seal para impedir adições e remoções, mas permitir alterar valor existente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const item={qtd:2};\nObject.___0___(item);\nitem.qtd=4;\nconst adicionou=Reflect.set(item,\"novo\",true);\nconsole.log(JSON.stringify([item,adicionou,Object.isSealed(item)]));",
+    "answers": [
+      [
+        "seal"
+      ]
+    ],
+    "expected": "[{\"qtd\":4},false,true]",
+    "hint": "seal conserva a escrita nas propriedades que já eram editáveis.",
+    "explanation": "seal conserva a escrita nas propriedades que já eram editáveis."
+  },
+  {
+    "id": "objects-medium-21",
+    "topic": "objects",
+    "level": "medium",
+    "number": 21,
+    "title": "Congelar dados do primeiro nível",
+    "description": "Use freeze para impedir escrita no campo existente. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const config={tema:\"escuro\"};\nObject.___0___(config);\nconst mudou=Reflect.set(config,\"tema\",\"claro\");\nconsole.log(JSON.stringify([mudou,config.tema,Object.isFrozen(config)]));",
+    "answers": [
+      [
+        "freeze"
+      ]
+    ],
+    "expected": "[false,\"escuro\",true]",
+    "hint": "freeze impede adições, remoções e alterações no primeiro nível.",
+    "explanation": "freeze impede adições, remoções e alterações no primeiro nível."
+  },
+  {
+    "id": "objects-medium-22",
+    "topic": "objects",
+    "level": "medium",
+    "number": 22,
+    "title": "Diferenciar herança de propriedade própria",
+    "description": "Use hasOwn para consultar apenas o próprio objeto. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const base={ativo:true};\nconst usuario=Object.create(base);\nusuario.nome=\"Ana\";\nconst proprio=___0___;\nconsole.log(JSON.stringify([\"ativo\" in usuario,proprio]));",
+    "answers": [
+      [
+        "Object.hasOwn(usuario,\"ativo\")"
+      ]
+    ],
+    "expected": "[true,false]",
+    "hint": "in inclui a cadeia de protótipos; hasOwn não inclui.",
+    "explanation": "in inclui a cadeia de protótipos; hasOwn não inclui."
+  },
+  {
+    "id": "objects-medium-23",
+    "topic": "objects",
+    "level": "medium",
+    "number": 23,
+    "title": "Mesclar sem modificar o destino original",
+    "description": "Use um objeto vazio como destino de Object.assign. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const base={tema:\"claro\"},extra={fonte:16};\nconst final=Object.assign(___0___,base,extra);\nconsole.log(JSON.stringify([final,base]));",
+    "answers": [
+      [
+        "{}"
+      ]
+    ],
+    "expected": "[{\"tema\":\"claro\",\"fonte\":16},{\"tema\":\"claro\"}]",
+    "hint": "assign modifica seu primeiro argumento.",
+    "explanation": "assign modifica seu primeiro argumento."
+  },
+  {
+    "id": "objects-medium-24",
+    "topic": "objects",
+    "level": "medium",
+    "number": 24,
+    "title": "Nome de propriedade com Symbol",
+    "description": "Leia a propriedade usando o próprio símbolo como chave. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const chave=Symbol(\"id\"),objeto={[chave]:42,id:\"público\"};\nconst valor=objeto[___0___];\nconsole.log(JSON.stringify([valor,Object.keys(objeto)]));",
+    "answers": [
+      [
+        "chave"
+      ]
+    ],
+    "expected": "[42,[\"id\"]]",
+    "hint": "Symbols não são convertidos para seus textos de descrição.",
+    "explanation": "Symbols não são convertidos para seus textos de descrição."
+  },
+  {
+    "id": "objects-medium-25",
+    "topic": "objects",
+    "level": "medium",
+    "number": 25,
+    "title": "Ordenar pares pelas chaves",
+    "description": "Ordene entradas usando comparação lexicográfica simples das chaves ASCII. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const objeto={z:1,a:2,m:3};\nconst pares=Object.entries(objeto).sort(([a],[b])=>a<b?-1:a>b?___0___:0);\nconsole.log(JSON.stringify(pares));",
+    "answers": [
+      [
+        "1"
+      ]
+    ],
+    "expected": "[[\"a\",2],[\"m\",3],[\"z\",1]]",
+    "hint": "O comparador deve retornar positivo quando a primeira chave vier depois.",
+    "explanation": "O comparador deve retornar positivo quando a primeira chave vier depois."
+  },
+  {
+    "id": "objects-medium-26",
+    "topic": "objects",
+    "level": "medium",
+    "number": 26,
+    "title": "Aplicar defaults sem perder false",
+    "description": "Defina valores ausentes com ??= preservando false. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const config={som:false};\nconfig.som ___0___ true;\nconfig.tema ??= \"escuro\";\nconsole.log(JSON.stringify(config));",
+    "answers": [
+      [
+        "??="
+      ]
+    ],
+    "expected": "{\"som\":false,\"tema\":\"escuro\"}",
+    "hint": "A atribuição só ocorre para null ou undefined.",
+    "explanation": "A atribuição só ocorre para null ou undefined."
+  },
+  {
+    "id": "objects-medium-27",
+    "topic": "objects",
+    "level": "medium",
+    "number": 27,
+    "title": "Somar mapas de pontuação",
+    "description": "Some a pontuação da mesma chave em vez de sobrescrevê-la. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const a={ana:3,bia:2},b={ana:4,caio:5},total={...a};\nfor(const [nome,pontos] of Object.entries(b)){\n  total[nome]=___0___;\n}\nconsole.log(JSON.stringify(total));",
+    "answers": [
+      [
+        "(total[nome] ?? 0) + pontos"
+      ]
+    ],
+    "expected": "{\"ana\":7,\"bia\":2,\"caio\":5}",
+    "hint": "O padrão zero cobre as chaves presentes apenas no segundo objeto.",
+    "explanation": "O padrão zero cobre as chaves presentes apenas no segundo objeto."
+  },
+  {
+    "id": "objects-medium-28",
+    "topic": "objects",
+    "level": "medium",
+    "number": 28,
+    "title": "Chaves presentes nas duas configurações",
+    "description": "Filtre as chaves da primeira usando presença própria na segunda. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const a={tema:1,fonte:2},b={tema:null,som:3};\nconst comuns=Object.keys(a).filter(k=>___0___);\nconsole.log(JSON.stringify(comuns));",
+    "answers": [
+      [
+        "Object.hasOwn(b,k)"
+      ]
+    ],
+    "expected": "[\"tema\"]",
+    "hint": "Um valor null ainda conta como campo existente.",
+    "explanation": "Um valor null ainda conta como campo existente."
+  },
+  {
+    "id": "objects-medium-29",
+    "topic": "objects",
+    "level": "medium",
+    "number": 29,
+    "title": "Distinguir null de padrão desestruturado",
+    "description": "Preencha o valor esperado: o padrão 5 só substitui undefined. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const {limite=5}={limite:null};\nconst previsto=___0___;\nconsole.log(JSON.stringify([previsto,limite]));",
+    "answers": [
+      [
+        "null"
+      ]
+    ],
+    "expected": "[null,null]",
+    "hint": "Desestruturação com padrão preserva null.",
+    "explanation": "Desestruturação com padrão preserva null."
+  },
+  {
+    "id": "objects-medium-30",
+    "topic": "objects",
+    "level": "medium",
+    "number": 30,
+    "title": "Normalizar chaves de entrada",
+    "description": "Remova espaços externos e converta cada chave para minúsculas. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const entrada={\" NOME \":\"Ana\",\"CIDADE\":\"Natal\"};\nconst normalizado=Object.fromEntries(Object.entries(entrada).map(([k,v])=>[___0___,v]));\nconsole.log(JSON.stringify(normalizado));",
+    "answers": [
+      [
+        "k.trim().toLowerCase()"
+      ]
+    ],
+    "expected": "{\"nome\":\"Ana\",\"cidade\":\"Natal\"}",
+    "hint": "A transformação acontece na chave, mantendo o valor original.",
+    "explanation": "A transformação acontece na chave, mantendo o valor original."
+  },
+  {
+    "id": "objects-hard-01",
+    "topic": "objects",
+    "level": "hard",
+    "number": 1,
+    "title": "Cópia profunda com ciclos",
+    "description": "Antes de recursar, reutilize a cópia já registrada no WeakMap. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function clonar(x,vistos=new WeakMap()){\n  if(x===null || typeof x!==\"object\")return x;\n  if(vistos.has(x))return ___0___;\n  const copia=Array.isArray(x)?[]:{};\n  vistos.set(x,copia);\n  for(const k of Object.keys(x))copia[k]=clonar(x[k],vistos);\n  return copia;\n}\nconst a={nome:\"raiz\"};a.eu=a;\nconst b=clonar(a);\nconsole.log(JSON.stringify([b!==a,b.eu===b,b.nome]));",
+    "answers": [
+      [
+        "vistos.get(x)"
+      ]
+    ],
+    "expected": "[true,true,\"raiz\"]",
+    "hint": "Registrar antes de visitar os filhos impede recursão infinita. Este exemplo usa objetos simples e arrays.",
+    "explanation": "Registrar antes de visitar os filhos impede recursão infinita. Este exemplo usa objetos simples e arrays."
+  },
+  {
+    "id": "objects-hard-02",
+    "topic": "objects",
+    "level": "hard",
+    "number": 2,
+    "title": "Congelamento profundo sem revisitar ciclos",
+    "description": "Adicione o objeto ao WeakSet antes de visitar suas propriedades. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function congelar(x,vistos=new WeakSet()){\n  if(x===null || typeof x!==\"object\" || vistos.has(x))return x;\n  ___0___;\n  for(const v of Object.values(x))congelar(v,vistos);\n  return Object.freeze(x);\n}\nconst a={filho:{n:1}};a.eu=a;\ncongelar(a);\nconsole.log(JSON.stringify([Object.isFrozen(a),Object.isFrozen(a.filho),Reflect.set(a.filho,\"n\",2)]));",
+    "answers": [
+      [
+        "vistos.add(x)"
+      ]
+    ],
+    "expected": "[true,true,false]",
+    "hint": "WeakSet rastreia objetos já visitados sem serializá-los.",
+    "explanation": "WeakSet rastreia objetos já visitados sem serializá-los."
+  },
+  {
+    "id": "objects-hard-03",
+    "topic": "objects",
+    "level": "hard",
+    "number": 3,
+    "title": "Igualdade profunda de dados JSON",
+    "description": "Compare recursivamente os valores das mesmas chaves em estruturas sem ciclos. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function igual(a,b){\n  if(Object.is(a,b))return true;\n  if(!a || !b || typeof a!==\"object\" || typeof b!==\"object\")return false;\n  if(Array.isArray(a)!==Array.isArray(b))return false;\n  const ks=Object.keys(a);\n  return ks.length===Object.keys(b).length && ks.every(k=>Object.hasOwn(b,k) && ___0___);\n}\nconsole.log(JSON.stringify([igual({a:[1,{b:2}]},{a:[1,{b:2}]}),igual({a:[1]},{a:[2]}),igual([],{}),igual(null,{})]));",
+    "answers": [
+      [
+        "igual(a[k],b[k])"
+      ]
+    ],
+    "expected": "[true,false,false,false]",
+    "hint": "A comparação deve descer em cada valor; a ordem das chaves não importa.",
+    "explanation": "A comparação deve descer em cada valor; a ordem das chaves não importa."
+  },
+  {
+    "id": "objects-hard-04",
+    "topic": "objects",
+    "level": "hard",
+    "number": 4,
+    "title": "Mesclagem recursiva de configurações simples",
+    "description": "Mescle objetos aninhados; arrays e demais valores devem ser substituídos. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const plano=x=>x!==null && typeof x===\"object\" && !Array.isArray(x);\nfunction mesclar(a,b){\n  const r={...a};\n  for(const [k,v] of Object.entries(b)){\n    r[k]=plano(v)&&plano(r[k])?___0___:v;\n  }\n  return r;\n}\nconst a={ui:{cor:\"azul\",fonte:14},tags:[1]};\nconst b={ui:{fonte:16},tags:[2]};\nconsole.log(JSON.stringify([mesclar(a,b),a]));",
+    "answers": [
+      [
+        "mesclar(r[k],v)"
+      ]
+    ],
+    "expected": "[{\"ui\":{\"cor\":\"azul\",\"fonte\":16},\"tags\":[2]},{\"ui\":{\"cor\":\"azul\",\"fonte\":14},\"tags\":[1]}]",
+    "hint": "A recursão só ocorre quando os dois valores são objetos simples deste exemplo.",
+    "explanation": "A recursão só ocorre quando os dois valores são objetos simples deste exemplo."
+  },
+  {
+    "id": "objects-hard-05",
+    "topic": "objects",
+    "level": "hard",
+    "number": 5,
+    "title": "Ler caminho de propriedades próprias",
+    "description": "Retorne o padrão ao encontrar um segmento inexistente, preservando zero no destino. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function ler(obj,caminho,padrao){\n  let atual=obj;\n  for(const chave of caminho){\n    if(atual===null || typeof atual!==\"object\" || !Object.hasOwn(atual,chave))return padrao;\n    atual=___0___;\n  }\n  return atual;\n}\nconst dados={a:{b:0}};\nconsole.log(JSON.stringify([ler(dados,[\"a\",\"b\"],9),ler(dados,[\"a\",\"c\"],9),ler(dados,[\"toString\"],9)]));",
+    "answers": [
+      [
+        "atual[chave]"
+      ]
+    ],
+    "expected": "[0,9,9]",
+    "hint": "Cada segmento avança o objeto atual; propriedades herdadas são ignoradas.",
+    "explanation": "Cada segmento avança o objeto atual; propriedades herdadas são ignoradas."
+  },
+  {
+    "id": "objects-hard-06",
+    "topic": "objects",
+    "level": "hard",
+    "number": 6,
+    "title": "Atualização persistente por caminho",
+    "description": "Reconstrua o filho recursivamente, copiando somente os níveis do caminho. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function atualizar(obj,[chave,...resto],valor){\n  if(chave===undefined)return valor;\n  return {...obj,[chave]:___0___};\n}\nconst a={perfil:{pontos:1},outro:{ok:true}};\nconst b=atualizar(a,[\"perfil\",\"pontos\"],8);\nconsole.log(JSON.stringify([b.perfil.pontos,a.perfil.pontos,b!==a,b.perfil!==a.perfil,b.outro===a.outro]));",
+    "answers": [
+      [
+        "atualizar(obj[chave],resto,valor)"
+      ]
+    ],
+    "expected": "[8,1,true,true,true]",
+    "hint": "Copia-se o caminho alterado; ramos intocados mantêm sua referência.",
+    "explanation": "Copia-se o caminho alterado; ramos intocados mantêm sua referência."
+  },
+  {
+    "id": "objects-hard-07",
+    "topic": "objects",
+    "level": "hard",
+    "number": 7,
+    "title": "Achatar objeto com caminhos pontuados",
+    "description": "Monte o caminho de cada folha incluindo seu prefixo quando existir. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function achatar(obj,prefixo=\"\",saida={}){\n  for(const [k,v] of Object.entries(obj)){\n    const caminho=prefixo?___0___:k;\n    if(v && typeof v===\"object\" && !Array.isArray(v))achatar(v,caminho,saida);\n    else saida[caminho]=v;\n  }\n  return saida;\n}\nconsole.log(JSON.stringify(achatar({usuario:{nome:\"Ana\",ativo:true},tags:[1]})));",
+    "answers": [
+      [
+        "prefixo+\".\"+k"
+      ]
+    ],
+    "expected": "{\"usuario.nome\":\"Ana\",\"usuario.ativo\":true,\"tags\":[1]}",
+    "hint": "Neste formato, chaves da origem não contêm pontos e arrays são folhas.",
+    "explanation": "Neste formato, chaves da origem não contêm pontos e arrays são folhas."
+  },
+  {
+    "id": "objects-hard-08",
+    "topic": "objects",
+    "level": "hard",
+    "number": 8,
+    "title": "Reconstruir objeto de caminhos seguros",
+    "description": "Crie objetos intermediários enquanto percorre os segmentos validados. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function montar(pares){\n  const raiz=Object.create(null);\n  for(const [caminho,valor] of pares){\n    const partes=caminho.split(\".\");\n    if(partes.some(k=>[\"__proto__\",\"constructor\",\"prototype\"].includes(k)))continue;\n    let atual=raiz;\n    for(const k of partes.slice(0,-1)){\n      atual[k] ??= Object.create(null);\n      atual=___0___;\n    }\n    atual[partes.at(-1)]=valor;\n  }\n  return raiz;\n}\nconsole.log(JSON.stringify(montar([[\"a.b\",2],[\"a.c\",3],[\"__proto__.invadido\",true]])));",
+    "answers": [
+      [
+        "atual[k]"
+      ]
+    ],
+    "expected": "{\"a\":{\"b\":2,\"c\":3}}",
+    "hint": "O exemplo aceita caminhos sem conflitos e bloqueia segmentos ligados ao protótipo.",
+    "explanation": "O exemplo aceita caminhos sem conflitos e bloqueia segmentos ligados ao protótipo."
+  },
+  {
+    "id": "objects-hard-09",
+    "topic": "objects",
+    "level": "hard",
+    "number": 9,
+    "title": "Diferenças rasas entre duas versões",
+    "description": "Classifique a chave como alterada quando os valores próprios diferirem. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function diferencas(a,b){\n  const r={adicionadas:[],removidas:[],alteradas:[]};\n  for(const k of new Set([...Object.keys(a),...Object.keys(b)])){\n    if(!Object.hasOwn(a,k))r.adicionadas.push(k);\n    else if(!Object.hasOwn(b,k))r.removidas.push(k);\n    else if(___0___)r.alteradas.push(k);\n  }\n  return r;\n}\nconsole.log(JSON.stringify(diferencas({a:1,b:2,d:0},{a:3,c:4,d:0})));",
+    "answers": [
+      [
+        "!Object.is(a[k],b[k])"
+      ]
+    ],
+    "expected": "{\"adicionadas\":[\"c\"],\"removidas\":[\"b\"],\"alteradas\":[\"a\"]}",
+    "hint": "Object.is distingue valores sem coerção de tipo; a comparação aqui é rasa.",
+    "explanation": "Object.is distingue valores sem coerção de tipo; a comparação aqui é rasa."
+  },
+  {
+    "id": "objects-hard-10",
+    "topic": "objects",
+    "level": "hard",
+    "number": 10,
+    "title": "Aplicar patch com remoção explícita",
+    "description": "Neste protocolo, null significa remover a chave; os demais valores substituem. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function aplicar(obj,patch){\n  const r={...obj};\n  for(const [k,v] of Object.entries(patch)){\n    if(v===null)___0___;\n    else Object.defineProperty(r,k,{value:v,enumerable:true,writable:true,configurable:true});\n  }\n  return r;\n}\nconsole.log(JSON.stringify(aplicar({a:1,b:2},{a:null,b:0,c:3})));",
+    "answers": [
+      [
+        "delete r[k]"
+      ]
+    ],
+    "expected": "{\"b\":0,\"c\":3}",
+    "hint": "A regra de remoção é específica deste patch e não deve excluir zero.",
+    "explanation": "A regra de remoção é específica deste patch e não deve excluir zero."
+  },
+  {
+    "id": "objects-hard-11",
+    "topic": "objects",
+    "level": "hard",
+    "number": 11,
+    "title": "Copiar preservando descritores",
+    "description": "Copie os descritores completos, incluindo getter e propriedade não enumerável. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const original={get dobro(){return 8;}};\nObject.defineProperty(original,\"oculto\",{value:7});\nconst copia=Object.create(Object.getPrototypeOf(original),___0___);\nconsole.log(JSON.stringify([copia.dobro,copia.oculto,Object.keys(copia),typeof Object.getOwnPropertyDescriptor(copia,\"dobro\").get]));",
+    "answers": [
+      [
+        "Object.getOwnPropertyDescriptors(original)"
+      ]
+    ],
+    "expected": "[8,7,[\"dobro\"],\"function\"]",
+    "hint": "Spread perderia os descritores e executaria o getter ao copiar.",
+    "explanation": "Spread perderia os descritores e executaria o getter ao copiar."
+  },
+  {
+    "id": "objects-hard-12",
+    "topic": "objects",
+    "level": "hard",
+    "number": 12,
+    "title": "Inspecionar chaves string e Symbol",
+    "description": "Use Reflect.ownKeys para incluir propriedades não enumeráveis e símbolos. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const s=Symbol(\"segredo\"),obj={visivel:1,[s]:2};\nObject.defineProperty(obj,\"interno\",{value:3});\nconst ks=Reflect.___0___(obj);\nconsole.log(JSON.stringify([ks.includes(\"visivel\"),ks.includes(\"interno\"),ks.includes(s),ks.length]));",
+    "answers": [
+      [
+        "ownKeys"
+      ]
+    ],
+    "expected": "[true,true,true,3]",
+    "hint": "Object.keys inclui apenas propriedades próprias enumeráveis de chave string.",
+    "explanation": "Object.keys inclui apenas propriedades próprias enumeráveis de chave string."
+  },
+  {
+    "id": "objects-hard-13",
+    "topic": "objects",
+    "level": "hard",
+    "number": 13,
+    "title": "Proxy com validação de escrita",
+    "description": "Depois de validar, delegue a atribuição a Reflect.set e retorne o sucesso. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const alvo={idade:20};\nconst pessoa=new Proxy(alvo,{set(obj,chave,valor){\n  if(chave===\"idade\" && (!Number.isInteger(valor)||valor<0))return false;\n  return ___0___;\n}});\nconsole.log(JSON.stringify([Reflect.set(pessoa,\"idade\",-1),Reflect.set(pessoa,\"idade\",21),alvo.idade]));",
+    "answers": [
+      [
+        "Reflect.set(obj,chave,valor)"
+      ]
+    ],
+    "expected": "[false,true,21]",
+    "hint": "O trap set deve indicar se a escrita foi aceita.",
+    "explanation": "O trap set deve indicar se a escrita foi aceita."
+  },
+  {
+    "id": "objects-hard-14",
+    "topic": "objects",
+    "level": "hard",
+    "number": 14,
+    "title": "Proxy para valor ausente",
+    "description": "No trap get, retorne zero somente se a propriedade não existir no próprio alvo. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const contagem=new Proxy({a:2,b:0},{get(obj,chave){\n  return Object.hasOwn(obj,chave)?___0___:0;\n}});\nconsole.log(JSON.stringify([contagem.a,contagem.b,contagem.c]));",
+    "answers": [
+      [
+        "obj[chave]"
+      ]
+    ],
+    "expected": "[2,0,0]",
+    "hint": "Verificar presença preserva valores existentes, inclusive zero.",
+    "explanation": "Verificar presença preserva valores existentes, inclusive zero."
+  },
+  {
+    "id": "objects-hard-15",
+    "topic": "objects",
+    "level": "hard",
+    "number": 15,
+    "title": "Cache de resultados por identidade",
+    "description": "Guarde no WeakMap o resultado associado ao próprio objeto recebido. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const cache=new WeakMap();let calculos=0;\nfunction calcular(obj){\n  if(!cache.has(obj)){calculos++;___0___;}\n  return cache.get(obj);\n}\nconst a={n:3},b={n:3};\nconst valores=[calcular(a),calcular(a),calcular(b)];\nconsole.log(JSON.stringify([valores,calculos]));",
+    "answers": [
+      [
+        "cache.set(obj,obj.n*2)"
+      ]
+    ],
+    "expected": "[[6,6,6],2]",
+    "hint": "Dois objetos de mesmo conteúdo são chaves distintas no WeakMap.",
+    "explanation": "Dois objetos de mesmo conteúdo são chaves distintas no WeakMap."
+  },
+  {
+    "id": "objects-hard-16",
+    "topic": "objects",
+    "level": "hard",
+    "number": 16,
+    "title": "Normalizar entidades e ordem",
+    "description": "Armazene cada entidade usando seu id como chave no índice. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const itens=[{id:\"b\",nome:\"Bia\"},{id:\"a\",nome:\"Ana\"}];\nconst estado={ids:[],porId:Object.create(null)};\nfor(const item of itens){\n  estado.ids.push(item.id);\n  ___0___=item;\n}\nconsole.log(JSON.stringify([estado.ids,estado.porId.a.nome]));",
+    "answers": [
+      [
+        "estado.porId[item.id]"
+      ]
+    ],
+    "expected": "[[\"b\",\"a\"],\"Ana\"]",
+    "hint": "A lista mantém a ordem; o objeto permite acesso por identificador.",
+    "explanation": "A lista mantém a ordem; o objeto permite acesso por identificador."
+  },
+  {
+    "id": "objects-hard-17",
+    "topic": "objects",
+    "level": "hard",
+    "number": 17,
+    "title": "Remontar registros na ordem salva",
+    "description": "Use cada id para recuperar sua entidade no índice. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const estado={ids:[\"b\",\"a\"],porId:{a:{nome:\"Ana\"},b:{nome:\"Bia\"}}};\nconst lista=estado.ids.map(id=>___0___);\nconsole.log(JSON.stringify(lista));",
+    "answers": [
+      [
+        "estado.porId[id]"
+      ]
+    ],
+    "expected": "[{\"nome\":\"Bia\"},{\"nome\":\"Ana\"}]",
+    "hint": "A ordem desejada vem de ids, não da enumeração do índice.",
+    "explanation": "A ordem desejada vem de ids, não da enumeração do índice."
+  },
+  {
+    "id": "objects-hard-18",
+    "topic": "objects",
+    "level": "hard",
+    "number": 18,
+    "title": "Agrupamento em dois níveis",
+    "description": "Inicialize o segundo nível para cada equipe antes de somar seu status. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const grupos=Object.create(null);\nfor(const x of [{equipe:\"A\",status:\"ok\"},{equipe:\"A\",status:\"ok\"},{equipe:\"B\",status:\"erro\"}]){\n  grupos[x.equipe] ??= Object.create(null);\n  const g=grupos[x.equipe];\n  g[x.status]=___0___;\n}\nconsole.log(JSON.stringify(grupos));",
+    "answers": [
+      [
+        "(g[x.status] ?? 0)+1"
+      ]
+    ],
+    "expected": "{\"A\":{\"ok\":2},\"B\":{\"erro\":1}}",
+    "hint": "O contador pertence ao grupo da equipe atual.",
+    "explanation": "O contador pertence ao grupo da equipe atual."
+  },
+  {
+    "id": "objects-hard-19",
+    "topic": "objects",
+    "level": "hard",
+    "number": 19,
+    "title": "Inverter mantendo colisões",
+    "description": "Acrescente cada chave ao grupo do valor, sem sobrescrever as anteriores. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const origem={a:\"azul\",b:\"verde\",c:\"azul\"},inverso=Object.create(null);\nfor(const [k,v] of Object.entries(origem)){\n  inverso[v] ??= [];\n  ___0___;\n}\nconsole.log(JSON.stringify(inverso));",
+    "answers": [
+      [
+        "inverso[v].push(k)"
+      ]
+    ],
+    "expected": "{\"azul\":[\"a\",\"c\"],\"verde\":[\"b\"]}",
+    "hint": "Valores repetidos precisam de arrays de chaves no objeto invertido.",
+    "explanation": "Valores repetidos precisam de arrays de chaves no objeto invertido."
+  },
+  {
+    "id": "objects-hard-20",
+    "topic": "objects",
+    "level": "hard",
+    "number": 20,
+    "title": "Ordenar recursivamente para serialização",
+    "description": "Ordene as chaves de objetos antes de reconstruí-los; preserve a ordem dos arrays. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function ordenar(x){\n  if(Array.isArray(x))return x.map(ordenar);\n  if(x && typeof x===\"object\")return Object.fromEntries(___0___.map(k=>[k,ordenar(x[k])]));\n  return x;\n}\nconst texto=JSON.stringify(ordenar({z:{b:2,a:1},a:[3,1]}));\nconsole.log(JSON.stringify(texto));",
+    "answers": [
+      [
+        "Object.keys(x).sort()"
+      ]
+    ],
+    "expected": "\"{\\\"a\\\":[3,1],\\\"z\\\":{\\\"a\\\":1,\\\"b\\\":2}}\"",
+    "hint": "Para estes dados JSON sem ciclos, a ordenação torna a representação reproduzível.",
+    "explanation": "Para estes dados JSON sem ciclos, a ordenação torna a representação reproduzível."
+  },
+  {
+    "id": "objects-hard-21",
+    "topic": "objects",
+    "level": "hard",
+    "number": 21,
+    "title": "toJSON que oculta campo interno",
+    "description": "Retorne apenas os campos permitidos no método de serialização. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const usuario={nome:\"Ana\",token:\"interno\",toJSON(){\n  return ___0___;\n}};\nconst texto=JSON.stringify(usuario);\nconsole.log(JSON.stringify(texto));",
+    "answers": [
+      [
+        "{nome:this.nome}"
+      ]
+    ],
+    "expected": "\"{\\\"nome\\\":\\\"Ana\\\"}\"",
+    "hint": "JSON.stringify usa o valor devolvido por toJSON.",
+    "explanation": "JSON.stringify usa o valor devolvido por toJSON."
+  },
+  {
+    "id": "objects-hard-22",
+    "topic": "objects",
+    "level": "hard",
+    "number": 22,
+    "title": "Reviver datas na leitura JSON",
+    "description": "Converta apenas a chave criadaEm para Date no reviver. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const texto='{\"criadaEm\":\"2026-01-02T00:00:00.000Z\",\"nome\":\"a\"}';\nconst obj=JSON.parse(texto,(k,v)=>k===\"criadaEm\"?___0___:v);\nconsole.log(JSON.stringify([obj.criadaEm instanceof Date,obj.criadaEm.getUTCFullYear(),obj.nome]));",
+    "answers": [
+      [
+        "new Date(v)"
+      ]
+    ],
+    "expected": "[true,2026,\"a\"]",
+    "hint": "O reviver pode substituir valores após interpretar o JSON.",
+    "explanation": "O reviver pode substituir valores após interpretar o JSON."
+  },
+  {
+    "id": "objects-hard-23",
+    "topic": "objects",
+    "level": "hard",
+    "number": 23,
+    "title": "Encontrar referências compartilhadas",
+    "description": "Use o mesmo objeto de endereço nos dois perfis e reconheça o compartilhamento. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const endereco={cidade:\"Natal\"};\nconst a={endereco},b={endereco};\na.endereco.cidade=\"Recife\";\nconst compartilham=___0___;\nconsole.log(JSON.stringify([compartilham,b.endereco.cidade]));",
+    "answers": [
+      [
+        "a.endereco === b.endereco"
+      ]
+    ],
+    "expected": "[true,\"Recife\"]",
+    "hint": "Guardar uma referência em dois objetos não duplica seu conteúdo.",
+    "explanation": "Guardar uma referência em dois objetos não duplica seu conteúdo."
+  },
+  {
+    "id": "objects-hard-24",
+    "topic": "objects",
+    "level": "hard",
+    "number": 24,
+    "title": "Evitar sobrescrever com undefined",
+    "description": "Ignore campos undefined do patch, mas aceite null como valor. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const origem={a:1,b:2,c:3},patch={a:undefined,b:null,c:0};\nconst final={...origem};\nfor(const [k,v] of Object.entries(patch)){\n  if(___0___)final[k]=v;\n}\nconsole.log(JSON.stringify(final));",
+    "answers": [
+      [
+        "v !== undefined"
+      ]
+    ],
+    "expected": "{\"a\":1,\"b\":null,\"c\":0}",
+    "hint": "A regra distingue ausência de atualização de um valor null explícito.",
+    "explanation": "A regra distingue ausência de atualização de um valor null explícito."
+  },
+  {
+    "id": "objects-hard-25",
+    "topic": "objects",
+    "level": "hard",
+    "number": 25,
+    "title": "Reduzir folhas numéricas de uma árvore",
+    "description": "Some recursivamente os valores quando encontrar objetos ou arrays. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function somar(x){\n  if(typeof x===\"number\")return x;\n  if(!x || typeof x!==\"object\")return 0;\n  return Object.values(x).reduce((s,v)=>s+___0___,0);\n}\nconsole.log(JSON.stringify(somar({a:2,b:{c:3,d:[4,\"ignorar\"]},e:null})));",
+    "answers": [
+      [
+        "somar(v)"
+      ]
+    ],
+    "expected": "9",
+    "hint": "O exemplo aceita dados acíclicos; somente folhas numéricas contribuem.",
+    "explanation": "O exemplo aceita dados acíclicos; somente folhas numéricas contribuem."
+  },
+  {
+    "id": "objects-hard-26",
+    "topic": "objects",
+    "level": "hard",
+    "number": 26,
+    "title": "Migrar versão de um registro",
+    "description": "Transforme o campo nomeCompleto em perfil.nome preservando id e atualizando versao. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "function migrar(registro){\n  if(registro.versao===2)return registro;\n  const {nomeCompleto,versao,...resto}=registro;\n  return {...resto,versao:2,perfil:___0___};\n}\nconst atual={id:2,versao:2,perfil:{nome:\"Bia\"}};\nconsole.log(JSON.stringify([migrar({id:1,versao:1,nomeCompleto:\"Ana\"}),migrar(atual)===atual]));",
+    "answers": [
+      [
+        "{nome:nomeCompleto}"
+      ]
+    ],
+    "expected": "[{\"id\":1,\"versao\":2,\"perfil\":{\"nome\":\"Ana\"}},true]",
+    "hint": "O registro que já está na versão atual pode ser devolvido sem nova cópia.",
+    "explanation": "O registro que já está na versão atual pode ser devolvido sem nova cópia."
+  },
+  {
+    "id": "objects-hard-27",
+    "topic": "objects",
+    "level": "hard",
+    "number": 27,
+    "title": "Dicionário com chave toString",
+    "description": "Use Object.create(null) para evitar colisões com propriedades herdadas. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const indice=Object.create(___0___);\nfor(const k of [\"toString\",\"a\",\"toString\"]){\n  indice[k]=(indice[k]??0)+1;\n}\nconsole.log(JSON.stringify([indice.toString,indice.a,Object.getPrototypeOf(indice)===null]));",
+    "answers": [
+      [
+        "null"
+      ]
+    ],
+    "expected": "[2,1,true]",
+    "hint": "Sem protótipo, toString pode ser uma chave comum do contador.",
+    "explanation": "Sem protótipo, toString pode ser uma chave comum do contador."
+  },
+  {
+    "id": "objects-hard-28",
+    "topic": "objects",
+    "level": "hard",
+    "number": 28,
+    "title": "Consultar descritor sem executar getter",
+    "description": "Leia o descritor da propriedade em vez de acessar seu valor. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "let leituras=0;\nconst obj={get valor(){leituras++;return 9;}};\nconst descritor=___0___;\nconsole.log(JSON.stringify([typeof descritor.get,leituras]));",
+    "answers": [
+      [
+        "Object.getOwnPropertyDescriptor(obj,\"valor\")"
+      ]
+    ],
+    "expected": "[\"function\",0]",
+    "hint": "Inspecionar o descritor não chama a função getter.",
+    "explanation": "Inspecionar o descritor não chama a função getter."
+  },
+  {
+    "id": "objects-hard-29",
+    "topic": "objects",
+    "level": "hard",
+    "number": 29,
+    "title": "Ordem de enumeração de chaves numéricas",
+    "description": "Preencha a ordem esperada: índices inteiros vêm antes das demais strings. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const obj={b:1,\"10\":2,\"2\":3,a:4};\nconst esperado=___0___;\nconsole.log(JSON.stringify([esperado,Object.keys(obj)]));",
+    "answers": [
+      [
+        "[\"2\",\"10\",\"b\",\"a\"]"
+      ]
+    ],
+    "expected": "[[\"2\",\"10\",\"b\",\"a\"],[\"2\",\"10\",\"b\",\"a\"]]",
+    "hint": "Chaves de índice são enumeradas em ordem numérica; as demais seguem inserção.",
+    "explanation": "Chaves de índice são enumeradas em ordem numérica; as demais seguem inserção."
+  },
+  {
+    "id": "objects-hard-30",
+    "topic": "objects",
+    "level": "hard",
+    "number": 30,
+    "title": "Validar esquema por funções",
+    "description": "Para cada campo do esquema, chame seu validador com o valor correspondente do objeto. Preencha apenas a lacuna; a pontuação fora dela já faz parte do código.",
+    "code": "const esquema={nome:v=>typeof v===\"string\"&&v.length>0,idade:v=>Number.isInteger(v)&&v>=0};\nfunction validar(obj){\n  return Object.entries(esquema).filter(([k,teste])=>!___0___).map(([k])=>k);\n}\nconsole.log(JSON.stringify([validar({nome:\"Ana\",idade:20}),validar({nome:\"\",idade:-1}),validar({nome:\"Ivo\"})]));",
+    "answers": [
+      [
+        "teste(obj[k])"
+      ]
+    ],
+    "expected": "[[],[\"nome\",\"idade\"],[\"idade\"]]",
+    "hint": "Cada validador recebe undefined se o campo obrigatório estiver ausente.",
+    "explanation": "Cada validador recebe undefined se o campo obrigatório estiver ausente."
+  }
+]

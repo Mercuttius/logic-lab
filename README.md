@@ -1,6 +1,9 @@
 # Logic Lab
 
-Laboratório pessoal em português com 1.170 exercícios de lacunas: 30 por nível (fácil, médio e difícil) em 13 assuntos: if, if/else, else if, switch, ternário, for, while, do/while, for/of, for/in, return, try/catch e async/await.
+Laboratório pessoal em português com 1.350 exercícios de lacunas: 30 por nível (fácil, médio e difícil) em 15 assuntos: if, if/else, else if, switch, ternário, for, while, do/while, for/of, for/in, return, try/catch, async/await, arrays e objetos.
+
+
+Ordem sugerida de estudo: if → if/else → else if → switch → ternário → return → arrays → objetos → for → while → do/while → for/of → for/in → try/catch → async/await. A navegação e os gráficos seguem a mesma ordem; cada assunto mantém os três níveis. Os fundamentos de coleções aparecem antes dos laços especializados, e o retorno de funções antes dos callbacks.
 
 ## Usar
 
@@ -13,6 +16,8 @@ A aba Aprendizado distingue exercícios únicos concluídos, tentativas e revis�
 A correção compara tokens com gabaritos, aceitando espaços e aspas simples/duplas. Não executa código enviado ao servidor e não reconhece automaticamente todas as expressões semanticamente equivalentes. Há 90 regras de decisão e 90 algoritmos de repetição, revisitados nas diferentes estruturas para permitir comparação; os 30 desafios dentro de cada combinação de estrutura e nível têm objetivos distintos.
 
 Os 270 exercícios de return, try/catch e async/await têm títulos e programas distintos, com 30 de cada dificuldade por assunto. Operações externas assíncronas são simuladas, sem rede ou credenciais. Seus oráculos são valores declarados separadamente dos gabaritos no arquivo autoral.
+
+Os 180 exercícios de arrays e objetos ficam em `lib/collections-exercises.json`, gerados por `scripts/collections-topics.mjs`. São 30 por dificuldade em cada assunto, com títulos, programas e objetivos próprios. Seus resultados esperados também são declarados independentemente dos gabaritos.
 
 ## Executar localmente
 
@@ -31,10 +36,11 @@ Aplique a migração apenas uma vez por banco local. Dados locais ficam em `.wra
 
 ```sh
 node scripts/new-topics.mjs
+node scripts/collections-topics.mjs
 node scripts/validate-exercises.mjs
 npx tsc --noEmit
 ```
 
-O validador é somente leitura: confere 1.170 exercícios e 39 grupos de 30, IDs, lacunas e unicidade dos novos títulos/códigos; executa gabaritos e alternativas com limite de tempo, aguarda Promises e compara as saídas aos oráculos. Também verifica rejeição de lacunas incorretas ou ausentes. Os 900 antigos passam por regressão contra as saídas preexistentes; isso não equivale a uma nova auditoria pedagógica completa. O teste nunca recalcula o esperado a partir da solução. O gerador legado Python não deve ser executado sobre o catálogo publicado sem uma revisão das saídas e IDs.
+O validador é somente leitura: confere 1.350 exercícios e 45 grupos de 30, IDs, lacunas e unicidade dos novos títulos/códigos; executa gabaritos e alternativas com limite de tempo, aguarda Promises e compara as saídas aos oráculos. Também verifica rejeição de lacunas incorretas ou ausentes. Os 900 antigos passam por regressão contra as saídas preexistentes; isso não equivale a uma nova auditoria pedagógica completa. O teste nunca recalcula o esperado a partir da solução. O gerador legado Python não deve ser executado sobre o catálogo publicado sem uma revisão das saídas e IDs.
 
 WebMCP: `open_exercise` permite abrir um exercício sem submeter respostas; só é registrado em navegadores com suporte.
